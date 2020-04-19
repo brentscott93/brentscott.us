@@ -1,0 +1,8 @@
+---
+title: Another post
+author: ''
+date: '2020-04-19'
+slug: another-post
+categories: []
+tags: []
+---

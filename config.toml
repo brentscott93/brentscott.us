@@ -1,0 +1,265 @@
+baseURL = "https://brentscott.us"
+languageCode = "en-us"
+theme = "aafu"
+
+[params]
+    title = "brentscott.us"
+    author = "Brent Scott"
+    description = "Personal website for Brent Scott"
+    copyright = ""
+
+    [params.theme]
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "dark"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = false
+        singlePage = false 
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Brent Scott, MS, CSCS"
+		tagline = "Graduate Student"
+		location = "UMass Amherst"
+        photo = "profile_brent.jpg"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+        
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-stack-overflow"
+            url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
+            title = "StackOverflow"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/brentscott93"
+            title = "GitHub"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-twitter"
+            url = "https://twitter.com/brentscott93"
+            title = "Twitter"
+		[[params.social.list]]
+            class = "ai"
+            icon = "ai-google-scholar"
+            url = "#"
+            title = "Google Scholar"
+    [[params.social.list]]
+            class = "fab"
+            icon = "fa-strava"
+            url = "https://www.strava.com/athletes/50701336"
+            title = "Strava"	
+		#[[params.social.list]]
+         #   class = "ai"
+         #   icon = "ai-researchgate"
+          #  url = "#"
+         #   title = "ResearchGate"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "research"
+    [[params.showInAccordion]]
+        item = "teaching"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "publication"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+    [[params.showInAccordion]]
+        item = "drums"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "**I'm Brent.** Currently, I am a graduate student at the University of Massachusetts Amherst studying molecular physiology and biophysics within the Kinesiology department. I am a member of the [Muscle Biophysics Lab](https://www.umass.edu/musclebiophy/) and use *in vitro* techniques to explore force generation in molecular motors." 
+
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "**Pursuing Ph.D. in Kinesiology *(ETA Spring 2022)***"
+            college = "University of Massachusetts Amherst"
+            dates = "2019 - *Present*"
+            thesis_title = "TBD"
+            thesis_link = "#"
+
+        [[params.education.list]]
+            degree = "**M.S. in Kinesiology**"
+            college = "University of Massachusetts Amherst"
+            dates = "2016 - 2019"
+            thesis_title = "Tropomyosin-Based Effects of Acidosis on Thin-Filament Regulation During Muscle Fatigue"
+            thesis_link = "https://scholarworks.umass.edu/masters_theses_2/795/"
+
+        [[params.education.list]]
+            degree = "**B.S. in Exercise Science**"
+            college = "Belmont University"
+            dates = "2012 - 2016"
+
+    # Research section
+    [params.research]
+        title = "Research"
+        icon = "fas fa-microscope"
+
+        [[params.research.list]]
+            position = "**Graduate Research Assistant**"
+            dates = "2016 - *Present*"
+            company = "Muscle Biophysics Lab (UMass Amherst)"
+            details = "My current research is in the field of single molecule biophysics. More specifically, some of my interests include investigating the molecular mechanisms underlying the regulation of force generation and energy transduction in skeletal muscle myosin II and its associated regulatory proteins, troponin and tropomyosin."
+
+        [[params.research.list]]
+            position = "**Undergraduate Research Assistant**"
+            dates = "2015 - 2016"
+            company = "Neuromuscular Physiology Lab (Vanderbilt University Medical Center)"
+            details = ""
+
+
+    # Teaching section
+    [params.teaching]
+        title = "Teaching"
+        icon = "fas fa-book"
+
+        [[params.teaching.list]]
+            position = "**Graduate Teaching Assistant**"
+            dates = "Fall 2019 - *Present*"
+            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
+
+        [[params.teaching.list]]
+            position = "**Graduate Teaching Assistant**"
+            dates = "Fall 2019"
+            company = "KIN 100 - Introduction to Kinesiology (UMass Amherst)"
+
+        [[params.teaching.list]]
+            position = "**Course Instructor (Online)**"
+            dates = "Summer 2019 & Summer 2018"
+            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
+
+        [[params.teaching.list]]
+            position = "**Course Instructor (Hybrid)**"
+            dates = "Summer 2019"
+            company = "KIN 470 - Exercise Physiology (UMass Amherst)"
+
+        [[params.teaching.list]]
+            position = "**Course Instructor**"
+            dates = "Spring 2018 - Spring 2019"
+            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
+
+        [[params.teaching.list]]
+            position = "**Graduate Teaching Assistant**"
+            dates = "Fall 2016 - Fall 2017"
+            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
+     
+        
+
+    # Publication section
+    [params.publication]
+        title = "Publications"
+        icon = "fas fa-newspaper"
+        #The order below determines the order in which the items appear in "Publications" section
+        format = ["date", "authors", "title", "journal"]
+        #If you don't want to group publications, comment the line below by adding # at the beginning
+        types = ["Journal Articles", "Proceedings"]
+
+      #  [[params.publication.list]]
+            #title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            #authors = "F Last, F Second, P secondary"
+            #date = "2018"
+           # journal = "Journal of Field 52 (16), 9033-9044"
+          #  link = "#"
+         #   type = "Journal Articles"
+
+        #[[params.publication.list]]
+         #   title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        #    authors = "F Last, F Second, P secondary"
+        #    date = "2018"
+        #    journal = "Journal of Field 52 (16), 9033-9044"
+        #    link = "#"
+         #   type = "Journal Articles"
+		
+        [[params.publication.list]]
+            title = " Rapid Onset Vasodilation in the Leg is Greater in Habitual Endurance Runners."
+            authors = "Coolbaugh C., Bush E., Sabin S., Scott B., Damon B., & Towse T."
+            date = "2016"
+            journal = "The FASEB Journal, 30(1 Supplement), 761.10-761.10"
+            link = "https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.761.10"
+            type = "Proceedings"
+
+    # Project section
+    [params.project]
+        title = "Projects"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "biophysr"
+            url = "https://github.com/brentscott93/biophysr/blob/master/README.md"
+            description = "Automated analysis of muscle biophysics data using *R Shiny*"
+    #    [[params.project.list]]
+    #        title = "project"
+     #       url = "#"
+     #       description = "Description of the project"
+     #   [[params.project.list]]
+     #       title = "project"
+      #      url = "#"
+       #     description = "Description of the project"
+       # [[params.project.list]]
+         #   title = "project"
+          #  url = "#"
+           # description = "Description of the project"            
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "In Vitro Motility"
+            skillrating = 95
+        [[params.skill.list]]
+            skill = "Laser Trapping"
+            skillrating = 75
+        [[params.skill.list]]
+            skill = "Data Analysis (R programming)"
+            skillrating = 85
+
+    # Hobby section
+    [params.hobby]
+        title = "Hobbies"
+        icon = "fas fa-gamepad"
+		
+        [[params.hobby.list]]		
+		    hobby = "Spending time with my wife and our 3 kiddos"
+        [[params.hobby.list]]		
+		    hobby = "Running, biking, kayaking (really anything outdoorsy!)"
+        [[params.hobby.list]]		
+		    hobby = ""
+		    
+		#Drums section
+    [params.drums]
+        title = "Alter-ego"
+        icon = "fas fa-drum"
+		
+        [[params.drums.list]]		
+		    drums = "Virtual drum lessons through [Naples Park Music](http://naplesparkmusic.com/music-lessons/)"
