@@ -250,7 +250,7 @@ theme = "aafu"
         icon = "fas fa-gamepad"
 		
         [[params.hobby.list]]		
-		    hobby = "Spending time with my wife and our 3 kiddos"
+		    hobby = "Spending time with my wife and our kiddos"
         [[params.hobby.list]]		
 		    hobby = "Running, biking, kayaking (really anything outdoorsy!)"
         [[params.hobby.list]]		
