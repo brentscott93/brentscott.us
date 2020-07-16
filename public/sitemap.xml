@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://brentscott.us/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://brentscott.us/</loc>
+    <loc>/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://brentscott.us/blog/pword/</loc>
+    <loc>/blog/pword/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://brentscott.us/blog/another-post/</loc>
+    <loc>/blog/another-post/</loc>
     <lastmod>2020-07-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://brentscott.us/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://brentscott.us/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

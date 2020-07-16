@@ -5,9 +5,8 @@ date: '2020-07-15'
 slug: another-post
 categories: []
 tags: []
+output: encryptedRmd::encrypted_html_document
 ---
 
 ```{r}
 with(mtcars, plot(mpg, gear))
-```
-
