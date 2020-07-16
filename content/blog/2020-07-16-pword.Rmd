@@ -1,0 +1,13 @@
+---
+title: pword
+author: ''
+date: '2020-07-16'
+slug: pword
+categories: []
+tags: []
+---
+
+```{r}
+paste0('Hi')
+```
+
