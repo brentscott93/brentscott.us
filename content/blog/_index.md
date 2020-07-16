@@ -1,4 +1,4 @@
 ---
-title: adventuR blog
+title: Data Analysis
 weight: 100
 ---
