@@ -6,28 +6,9 @@
     <description>Recent content in Data Analysis on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>pword</title>
-      <link>/blog/pword/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/pword/</guid>
-      <description> paste0(&amp;#39;Hi&amp;#39;) ## [1] &amp;quot;Hi&amp;quot; </description>
-    </item>
-    
-    <item>
-      <title>another post</title>
-      <link>/blog/another-post/</link>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/another-post/</guid>
-      <description> with(mtcars, plot(mpg, gear)) </description>
-    </item>
     
   </channel>
 </rss>
