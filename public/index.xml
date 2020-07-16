@@ -20,14 +20,5 @@
       <description> with(mtcars, plot(mpg, gear)) </description>
     </item>
     
-    <item>
-      <title>myoV-Phosphate Summary</title>
-      <link>/post/myov-phosphate-summary/</link>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/myov-phosphate-summary/</guid>
-      <description> with(mtcars, plot(mpg, gear)) </description>
-    </item>
-    
   </channel>
 </rss>

@@ -1,12 +1,14 @@
 baseURL = "https://brentscott.us"
 languageCode = "en-us"
 theme = "aafu"
-
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown", "_files$", "_cache$"]
+    
 [params]
     title = "brentscott.us"
     author = "Brent Scott"
     description = "Personal website for Brent Scott"
     copyright = ""
+    footer = "&copy; [Brent Scott](https://brentscott.us) 2020"
 
     [params.theme]
         # Available themes are 'light', 'dark', and 'pinkish'
@@ -18,12 +20,10 @@ theme = "aafu"
     [params.favicons]
         use = true
         metas = '''
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
-        <link rel="shortcut icon" href="favicon.ico">
+       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+       <link rel="manifest" href="/site.webmanifest">
         '''
 
     # Profile section
