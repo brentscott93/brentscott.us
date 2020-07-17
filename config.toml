@@ -2,6 +2,7 @@ baseURL = "https://brentscott.us"
 languageCode = "en-us"
 theme = "aafu"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown", "_files$", "_cache$"]
+staticDir = "static"
     
 [params]
     title = "brentscott.us"
@@ -31,7 +32,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown", "_files$", "_cache$"]
         name = "Brent Scott, MS, CSCS"
 		tagline = "Graduate Student"
 		location = "UMass Amherst"
-        photo = "profile_brent.jpg"
+        photo = "profile.jpg"
 
     # Section for links to social websites
     [params.social]
