@@ -1,4 +1,4 @@
 ---
-title: Data Analysis
+title: Blog
 weight: 100
 ---

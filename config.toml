@@ -32,32 +32,42 @@ staticDir = "static"
         name = "Brent Scott, MS, CSCS"
 		tagline = "Graduate Student"
 		location = "UMass Amherst"
-        photo = "profile.jpg"
+        photo = "profile_brent.jpg"
 
     # Section for links to social websites
     [params.social]
         title = "Links"
         
+        #[[params.social.list]]
+          #  class = "fab"
+           # icon = "fa-stack-overflow"
+            #url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
+            #title = "StackOverflow"
+       # [[params.social.list]]
+        #    class = "ai"
+         #   icon = "fa-envelope"
+          #  url = "bdscott@umass.edu"
+           # title = "Email"
         [[params.social.list]]
-            class = "fab"
-            icon = "fa-stack-overflow"
-            url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
-            title = "StackOverflow"
+            class = "ai"
+            icon = "ai-google-scholar" 
+            url = "https://scholar.google.com/citations?hl=en&user=v_4YkmYAAAAJ&view_op=list_works&gmla=AJsN-F588qLiiHEzJJZucY6rIHVxxSNzkWmGYy-IhAN5k2z3H5MibxUAkczE1LAULACKyXMX2sEK9pS3TqvBTrSEpHO9Pkjt4e7Y_-i_s10GHrA6z9NW0ic"
+            title = "Google Scholar"
         [[params.social.list]]
             class = "fab"
             icon = "fa-github"
             url = "https://github.com/brentscott93"
             title = "GitHub"
-        [[params.social.list]]
+        #[[params.social.list]]
+         #   class = "fab"
+          #  icon = "fa-twitter"
+           # url = "https://twitter.com/brentscott93"
+            #title = "Twitter"
+	[[params.social.list]]
             class = "fab"
-            icon = "fa-twitter"
-            url = "https://twitter.com/brentscott93"
-            title = "Twitter"
-		[[params.social.list]]
-            class = "ai"
-            icon = "ai-google-scholar"
-            url = "#"
-            title = "Google Scholar"
+            icon = "fa-stack-overflow"
+            url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
+            title = "StackOverflow"
     [[params.social.list]]
             class = "fab"
             icon = "fa-strava"
@@ -143,36 +153,18 @@ staticDir = "static"
         icon = "fas fa-book"
 
         [[params.teaching.list]]
-            position = "**Graduate Teaching Assistant**"
-            dates = "Fall 2019 - *Present*"
-            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
+            position = "**Courses Taught**"
+            dates = "UMass Amherst"
+            company = "KIN 110 (Human Performance & Nutrition); KIN 470 (Exercise Physiology)"
 
         [[params.teaching.list]]
             position = "**Graduate Teaching Assistant**"
-            dates = "Fall 2019"
-            company = "KIN 100 - Introduction to Kinesiology (UMass Amherst)"
+            dates = "UMass Amherst"
+            company = "KIN 100 (Introduction to Kinesiology); KIN 110; KIN 394 (Applied Exercise Testing)"
 
-        [[params.teaching.list]]
-            position = "**Course Instructor (Online)**"
-            dates = "Summer 2019 & Summer 2018"
-            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
-
-        [[params.teaching.list]]
-            position = "**Course Instructor (Hybrid)**"
-            dates = "Summer 2019"
-            company = "KIN 470 - Exercise Physiology (UMass Amherst)"
-
-        [[params.teaching.list]]
-            position = "**Course Instructor**"
-            dates = "Spring 2018 - Spring 2019"
-            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
-
-        [[params.teaching.list]]
-            position = "**Graduate Teaching Assistant**"
-            dates = "Fall 2016 - Fall 2017"
-            company = "KIN 110 - Human Performance & Nutrition (UMass Amherst)"
-     
         
+    
+    
 
     # Publication section
     [params.publication]
@@ -182,14 +174,14 @@ staticDir = "static"
         format = ["date", "authors", "title", "journal"]
         #If you don't want to group publications, comment the line below by adding # at the beginning
         types = ["Journal Articles", "Proceedings"]
-
-      #  [[params.publication.list]]
-            #title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            #authors = "F Last, F Second, P secondary"
-            #date = "2018"
-           # journal = "Journal of Field 52 (16), 9033-9044"
-          #  link = "#"
-         #   type = "Journal Articles"
+ 
+       [[params.publication.list]]
+            title = " Positional Isomers of a Non-Nucleoside Substrate Differentially Affect Myosin Function. "
+            authors = "Mike Woodward, Eric Ostrander, Seung P. Jeong, Xiarong Liu, Brent Scott, Matt Unger, Jianhan Chen, Dhandapani Venkataraman, Edward P. Debold"
+            date = "2020"
+            journal = "Biophysical Journal 119(3), 567-580"
+            link = "https://www.cell.com/biophysj/fulltext/S0006-3495(20)30500-2"
+            type = "Journal Articles"
 
         #[[params.publication.list]]
          #   title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -206,7 +198,7 @@ staticDir = "static"
             journal = "The FASEB Journal, 30(1 Supplement), 761.10-761.10"
             link = "https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.761.10"
             type = "Proceedings"
-
+ 
     # Project section
     [params.project]
         title = "Projects"
@@ -237,13 +229,13 @@ staticDir = "static"
 
         [[params.skill.list]]
             skill = "In Vitro Motility"
-            skillrating = 95
+            skillrating = 85
         [[params.skill.list]]
             skill = "Laser Trapping"
-            skillrating = 75
+            skillrating = 90
         [[params.skill.list]]
             skill = "Data Analysis (R programming)"
-            skillrating = 85
+            skillrating = 95
 
     # Hobby section
     [params.hobby]
@@ -256,7 +248,9 @@ staticDir = "static"
 		    hobby = "Running, biking, kayaking (really anything outdoorsy!)"
         [[params.hobby.list]]		
 		    hobby = ""
-		    
+		
+		
+		
 		#Drums section
     [params.drums]
         title = "Alter-ego"
