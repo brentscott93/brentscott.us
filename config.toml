@@ -175,6 +175,14 @@ staticDir = "static"
         #If you don't want to group publications, comment the line below by adding # at the beginning
         types = ["Journal Articles", "Proceedings"]
  
+   [[params.publication.list]]
+            title = " FRET and optical trapping reveal mechanisms of actin-activation of the power stroke and phosphate-release in myosin V"
+            authors = "Gunther LK, Rohde JA, Tang W, Cirilo JA Jr, Marang CP, Scott BD, Thomas DD, Debold EP, Yengo CM"
+            date = "2020"
+            journal = "J Biol Chem. doi: 10.1074/jbc.RA120.015632"
+            link = "https://pubmed.ncbi.nlm.nih.gov/33055236/"
+            type = "Journal Articles"
+            
        [[params.publication.list]]
             title = " Positional Isomers of a Non-Nucleoside Substrate Differentially Affect Myosin Function. "
             authors = "Mike Woodward, Eric Ostrander, Seung P. Jeong, Xiarong Liu, Brent Scott, Matt Unger, Jianhan Chen, Dhandapani Venkataraman, Edward P. Debold"
