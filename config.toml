@@ -180,7 +180,7 @@ staticDir = "static"
             authors = "Gunther LK, Rohde JA, Tang W, Cirilo JA Jr, Marang CP, Scott BD, Thomas DD, Debold EP, Yengo CM"
             date = "2020"
             journal = "J Biol Chem. doi: 10.1074/jbc.RA120.015632"
-            link = "https://pubmed.ncbi.nlm.nih.gov/33055236/"
+            link = "publications/gunther-2020-jbc.pdf"
             type = "Journal Articles"
             
        [[params.publication.list]]
@@ -188,7 +188,7 @@ staticDir = "static"
             authors = "Mike Woodward, Eric Ostrander, Seung P. Jeong, Xiarong Liu, Brent Scott, Matt Unger, Jianhan Chen, Dhandapani Venkataraman, Edward P. Debold"
             date = "2020"
             journal = "Biophysical Journal 119(3), 567-580"
-            link = "https://www.cell.com/biophysj/fulltext/S0006-3495(20)30500-2"
+            link = "https://brentscott.us/publications/woodward-2020-skeletal-azo.pdf"
             type = "Journal Articles"
 
         #[[params.publication.list]]
