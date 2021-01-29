@@ -1,639 +1,467 @@
-<!DOCTYPE html>
-<html lang="" xml:lang="">
-  <head>
-    <title>Myosin’s Powerstroke Occurs with Phosphate Still in the Active Site</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="Brent Scott" />
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-  </head>
-  <body>
-    <textarea id="source">
+---
+title: "Myosin's Powerstroke Occurs with Phosphate Still in the Active Site"
+author: "Brent Scott"
+output:
+  xaringan::moon_reader:
+    fig_caption: yes
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+editor_options: 
+  chunk_output_type: console
+---
+
 
 
 class: left, inverse
-&lt;h2 style = "margin-bottom: 10px"&gt; Myosin's Powerstroke Occurs with Phosphate Still in the Active Site &lt;/h2&gt;
-&lt;h5 style = "margin-top: 0px; margin-bottom: 20px"&gt; Brent Scott&lt;sup&gt;1&lt;/sup&gt;, Christopher Marang&lt;sup&gt;1&lt;/sup&gt;, Laura K. Gunther&lt;sup&gt;2&lt;/sup&gt;, Mike Woodward&lt;sup&gt;1&lt;/sup&gt;, Christopher M. Yengo&lt;sup&gt;2&lt;/sup&gt;, and Edward P. Debold&lt;sup&gt;1&lt;/sup&gt;
-&lt;br&gt;
-Muscle Biophysics Lab, Department of Kinesiology,  University of Massachusetts, Amherst, Massachusetts, USA&lt;sup&gt;1&lt;/sup&gt;
-&lt;br&gt;
-Department of Cellular and Molecular Physiology, Pennsylvania State College of Medicine, Hershey, Pennsylvania,USA&lt;sup&gt;2&lt;/sup&gt;&lt;/h5&gt;
-&lt;img style = "width: 55%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0px; padding-bottom: 0px; margin-top: 5px" src = "images/title-trace-gif/trap-data.gif"&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h3 style = "margin-top: 0px; padding-top: 0px"&gt; Presented by: Brent Scott, MS, CSCS
-&lt;br&gt;
-Slides available at: &lt;a href="brentscott.us"&gt; brentscott.us/lab/biophysics2021&lt;/a&gt;&lt;/h3&gt;
-
-
-
----
-# How is Myosin's Force Production Coupled to Energetics?
-&lt;div style = "display: flex"&gt;
-&lt;div style ="width: 49%; float: left;"&gt;
-&lt;h4 style = "margin-bottom: 0px; padding-left: 150px"&gt;Myosin II&lt;/h4&gt;
-&lt;br&gt;
-&lt;img src = "images/myosin.gif" style = "width: 100%;padding-left: 50px" &gt;
-&lt;/div&gt;
-&lt;div style ="width: 25%, float: right;"&gt;
-&lt;h4 style = "margin-bottom: 0px; padding-left: 350px"&gt;Myosin V&lt;/h4&gt;
-&lt;br&gt;
-&lt;img src = "images/warshaw-myov.gif" style = "width:60%; padding-left:200px" &gt;
-&lt;/div&gt;
-&lt;/div&gt;
-.footnote[Vale &amp; Milligan 2000; David Warshaw Lab Website]
-
+<h2 style="margin-bottom: 10px">
+Myosin’s Powerstroke Occurs with Phosphate Still in the Active Site
+</h2>
+<h5 style="margin-top: 0px; margin-bottom: 20px">
+Brent Scott<sup>1</sup>, Christopher Marang<sup>1</sup>, Laura K. Gunther<sup>2</sup>, Mike Woodward<sup>1</sup>, Christopher M. Yengo<sup>2</sup>, and Edward P. Debold<sup>1</sup>
+<br>
+Muscle Biophysics Lab, Department of Kinesiology, University of Massachusetts, Amherst, Massachusetts, USA<sup>1</sup>
+<br>
+Department of Cellular and Molecular Physiology, Pennsylvania State College of Medicine, Hershey, Pennsylvania,USA<sup>2</sup>
+</h5>
+<img style = "width: 55%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0px; padding-bottom: 0px; margin-top: 5px" src = "images/title-trace-gif/trap-data.gif">
+<br>
+<br>
+<h3 style="margin-top: 0px; padding-top: 0px">
+Presented by: Brent Scott, MS, CSCS
+<br>
+Slides available at: <a href="brentscott.us"> brentscott.us/lab/biophysics2021</a>
+</h3>
+<p>class: center, middle
+# Myosin’s Cross-Bridge Cycle
+&lt;img src = “images/xb.jpg”, style = “width: 90%”&gt;</p>
 ???
-A fundamental question to biology/biophysics is in understanding how molecular motors like myosin couple force generation and biochemistry, however  the  molecular  basis  of  this  process  remains unclear. 
----
+At the core of force production is the mechanochemical system that is myosin’s cross bridge cycle. Here is a basic model…When myosin binds actin it shows myosin going through the powerstroke and releasing Pi in one step and then releasing ADP and binding a new ATP
+—
 class: center, middle
-# Myosin's Cross-Bridge Cycle
-&lt;img src = "images/xb.jpg", style = "width: 90%"&gt;
-
-???
-At the core of force production is the mechanochemical system that is myosin's cross bridge cycle. Here is a basic model...When myosin binds actin it shows myosin going through the powerstroke and releasing Pi in one step and then releasing ADP and binding a new ATP
----
-class: center, middle
-# Myosin's Cross-Bridge Cycle
-&lt;img src = "images/xb-q.jpg", style = "width: 90%"&gt;
+# Myosin’s Cross-Bridge Cycle
+&lt;img src = “images/xb-q.jpg”, style = “width: 90%”&gt;
 ???
 However, the timing or sequence of the powerstroke and pi release is unclear - a classic chicken and the egg conundrum
----
+—
 # Two Scenarios
 .left-column[
-&lt;h3 style="color:black"&gt; 1) Powerstroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h3&gt;
+<h3 style="color:black">
+<ol style="list-style-type: decimal">
+<li>Powerstroke occurs before P<sub>i</sub>-release
+</h3>
 .footnote[Dantzig 1992; He 1997; Sleep 2005; Muretta 2015; Trivedi 2015; Woody 2019; Gunther 2020]
-]
+]</li>
+</ol>
+<img src = "images/scenario1.jpg" style = "width: 80%">
+<div style="padding-left: 300px">
 
-&lt;img src = "images/scenario1.jpg" style = "width: 80%"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;/div&gt;
----
-# Two Scenarios
+</div>
+<div id="two-scenarios" class="section level1">
+<h1>Two Scenarios</h1>
 .left-column[
-&lt;h3 style="color:black"&gt; 1) Powerstroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h3&gt;
+<h3 style="color:black">
+<ol style="list-style-type: decimal">
+<li>Powerstroke occurs before P<sub>i</sub>-release
+</h3>
 .footnote[Dantzig 1992; He 1997; Sleep 2005; Muretta 2015; Trivedi 2015; Woody 2019; Gunther 2020]
-]
-
-&lt;img src = "images/scenario1.jpg" style = "width: 80%"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;li&gt; Muscle fibers develop force faster than appearance of Pi in solution&lt;/li&gt;
-&lt;/div&gt;
----
-# Two Scenarios
+]</li>
+</ol>
+<img src = "images/scenario1.jpg" style = "width: 80%">
+<div style="padding-left: 300px">
+<li>
+Muscle fibers develop force faster than appearance of Pi in solution
+</li>
+<li>
+Release of caged P<sub>i</sub> causes delayed depression in isometric tension of fibers
+</li>
+</div>
+</div>
+<div id="two-scenarios-1" class="section level1">
+<h1>Two Scenarios</h1>
 .left-column[
-&lt;h3 style="color:black"&gt; 1) Powerstroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h3&gt;
+<h3 style="color:black">
+<ol style="list-style-type: decimal">
+<li>Powerstroke occurs before P<sub>i</sub>-release
+</h3>
 .footnote[Dantzig 1992; He 1997; Sleep 2005; Muretta 2015; Trivedi 2015; Woody 2019; Gunther 2020]
-]
-
-&lt;img src = "images/scenario1.jpg" style = "width: 80%"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;li&gt; Muscle fibers develop force faster than appearance of Pi in solution&lt;/li&gt;
-&lt;li&gt; Release of caged P&lt;sub&gt;i&lt;/sub&gt; causes delayed depression in isometric tension of fibers&lt;/li&gt;
-&lt;/div&gt;
-
----
-# Two Scenarios
+]</li>
+</ol>
+<img src = "images/scenario1.jpg" style = "width: 80%">
+<div style="padding-left: 300px">
+<li>
+Muscle fibers develop force faster than appearance of Pi in solution
+</li>
+<li>
+Release of caged P<sub>i</sub> causes delayed depression in isometric tension of fibers
+</li>
+<li>
+FRET shows rate of powerstroke &gt;&gt;&gt; rate of P<sub>i</sub>-release
+</li>
+<li>
+Ultra-fast optical trapping estimates rate of powerstroke 1000 - 5000 s<sup>-1</sup>
+</li>
+</div>
+</div>
+<div id="two-scenarios-2" class="section level1">
+<h1>Two Scenarios</h1>
 .left-column[
-&lt;h3 style="color:black"&gt; 1) Powerstroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h3&gt;
-.footnote[Dantzig 1992; He 1997; Sleep 2005; Muretta 2015; Trivedi 2015; Woody 2019; Gunther 2020]
-]
-
-&lt;img src = "images/scenario1.jpg" style = "width: 80%"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;li&gt; Muscle fibers develop force faster than appearance of Pi in solution&lt;/li&gt;
-&lt;li&gt; Release of caged P&lt;sub&gt;i&lt;/sub&gt; causes delayed depression in isometric tension of fibers&lt;/li&gt;
-&lt;li&gt; FRET shows rate of powerstroke &gt;&gt;&gt; rate of P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/li&gt;
-&lt;/div&gt;
----
-# Two Scenarios
-.left-column[
-&lt;h3 style="color:black"&gt; 1) Powerstroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h3&gt;
-.footnote[Dantzig 1992; He 1997; Sleep 2005; Muretta 2015; Trivedi 2015; Woody 2019; Gunther 2020]
-]
-
-&lt;img src = "images/scenario1.jpg" style = "width: 80%"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;li&gt; Muscle fibers develop force faster than appearance of Pi in solution&lt;/li&gt;
-&lt;li&gt; Release of caged P&lt;sub&gt;i&lt;/sub&gt; causes delayed depression in isometric tension of fibers&lt;/li&gt;
-&lt;li&gt; FRET shows rate of powerstroke &gt;&gt;&gt; rate of P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/li&gt;
-&lt;li&gt; Ultra-fast optical trapping estimates rate of powerstroke 1000 - 5000 s&lt;sup&gt;-1&lt;/sup&gt; &lt;/li&gt;
-&lt;/div&gt;
----
-# Two Scenarios
-.left-column[
-&lt;h2 style="color:black"&gt; 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
+<h2 style="color:black">
+<ol start="2" style="list-style-type: decimal">
+<li>P<sub>i</sub>-release gates the powerstroke
+</h2>
 .footnote[Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020]
-]
-
-&lt;img src = "images/scenario2.jpg" style = "width: 80%" &gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;/div&gt;
----
-# Two Scenarios
+]</li>
+</ol>
+<img src = "images/scenario2.jpg" style = "width: 80%" >
+<div style="padding-left: 25px">
+<li>
+X-ray crystallography shows myosin is pre-powerstroke with P<sub>i</sub> in the active site
+</li>
+</div>
+</div>
+<div id="two-scenarios-3" class="section level1">
+<h1>Two Scenarios</h1>
 .left-column[
-&lt;h2 style="color:black"&gt; 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
-.footnote[Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020]
-]
-
-&lt;img src = "images/scenario2.jpg" style = "width: 80%" &gt;
-&lt;div style = "padding-left: 25px"&gt;
-&lt;li&gt; X-ray crystallography shows myosin is pre-powerstroke with P&lt;sub&gt;i&lt;/sub&gt; in the active site &lt;/li&gt;
-&lt;/div&gt;
----
-# Two Scenarios
+<h2 style="color:black">
+<ol start="2" style="list-style-type: decimal">
+<li>P<sub>i</sub>-release gates the powerstroke
+</h2>
+<img src = "images/llinas1.jpg" style = "width: 95%">
+<font size = 1>Llinas 2015</font>
+<div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px">
+<p><font color = "grey">Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020</font></p>
+</div>
+]</li>
+</ol>
+<img src = "images/scenario2.jpg" style = "width: 80%" >
+<div style="padding-left: 30px">
+<li>
+Crystallography shows myosin in pre-powerstroke position with P<sub>i</sub> in the active site
+</li>
+<li>
+Myosin only in a post-powerstroke position when P<sub>i</sub> is absent from active site
+</li>
+<li>
+Movement of P<sub>i</sub> from active site into the P<sub>i</sub> exit tunnel is rapid
+</li>
+</div>
+<hr />
+</div>
+<div id="two-scenarios-4" class="section level1">
+<h1>Two Scenarios</h1>
 .left-column[
-&lt;h2 style="color:black"&gt; 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
-.footnote[Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020]
-]
-
-&lt;img src = "images/scenario2.jpg" style = "width: 80%" &gt;
-&lt;div style = "padding-left: 25px"&gt;
-&lt;li&gt; X-ray crystallography shows myosin is pre-powerstroke with P&lt;sub&gt;i&lt;/sub&gt; in the active site &lt;/li&gt;
-&lt;li&gt; Myosin only in a post-powerstroke position when P&lt;sub&gt;i&lt;/sub&gt; is absent from active site &lt;/li&gt;
-&lt;/div&gt;
----
-# Two Scenarios
-.left-column[
-&lt;h2 style="color:black"&gt; 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
-&lt;img src = "images/llinas1.jpg" style = "width: 95%"&gt;
-&lt;font size = 1&gt;Llinas 2015&lt;/font&gt;
-&lt;div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px"&gt;
-&lt;font color = "grey"&gt;Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020&lt;/font&gt;
-&lt;/div&gt;
-]
-
-&lt;img src = "images/scenario2.jpg" style = "width: 80%" &gt;
-&lt;div style = "padding-left: 30px"&gt;
-&lt;li&gt; Crystallography shows myosin in pre-powerstroke position with P&lt;sub&gt;i&lt;/sub&gt; in the active site &lt;/li&gt;
-&lt;li&gt; Myosin only in a post-powerstroke position when P&lt;sub&gt;i&lt;/sub&gt; is absent from active site &lt;/li&gt;
-&lt;li&gt; Movement of P&lt;sub&gt;i&lt;/sub&gt; from active site into the P&lt;sub&gt;i&lt;/sub&gt; exit tunnel is rapid &lt;/li&gt;
-&lt;/div&gt;
----
-
-# Two Scenarios
-.left-column[
-&lt;h2 style="color:black"&gt; 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
-&lt;img src = "images/llinas1.jpg" style = "width: 95%"&gt;
-&lt;font size = 1&gt;Llinas 2015&lt;/font&gt;
-&lt;div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px"&gt;
-&lt;font color = "grey"&gt;Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020&lt;/font&gt;
-&lt;/div&gt;
-]
-
-&lt;img src = "images/scenario2.jpg" style = "width: 80%" &gt;
-&lt;div style = "padding-left: 30px"&gt;
-&lt;li&gt; Crystallography shows myosin in pre-powerstroke position with P&lt;sub&gt;i&lt;/sub&gt; in the active site &lt;/li&gt;
-&lt;li&gt;Myosin only in a post-powerstroke position when P&lt;sub&gt;i&lt;/sub&gt; is absent from active site &lt;/li&gt;
-&lt;li&gt; Movement of P&lt;sub&gt;i&lt;/sub&gt; from active site into the P&lt;sub&gt;i&lt;/sub&gt; exit tunnel is rapid &lt;/li&gt;
-&lt;li&gt; Suggests why functional assay observe slower P&lt;sub&gt;i&lt;/sub&gt;-release rate &lt;/li&gt;
-
---
-&lt;li&gt;&lt;b&gt; Provides a uniyfing theory between the functional/structural views&lt;/b&gt;
-&lt;/div&gt;
----
-class: center, middle
-
-# Can we prevent or delay the powerstroke by occupying the active site with P&lt;sub&gt;i&lt;/sub&gt;?
----
-&lt;h1 style = "margin-bottom: 20px"&gt; S217A mutation traps P&lt;sub&gt;i&lt;/sub&gt; in the active site&lt;/h1&gt;
+<h2 style="color:black">
+<ol start="2" style="list-style-type: decimal">
+<li>P<sub>i</sub>-release gates the powerstroke
+</h2>
+<img src = "images/llinas1.jpg" style = "width: 95%">
+<font size = 1>Llinas 2015</font>
+<div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px">
+<p><font color = "grey">Rayment 1993, Gulick 2000, Sweeney &amp; Houdusse 2010, Llinas 2015, Houdusse &amp; Sweeney 2016, Robert-Paganin 2020</font></p>
+</div>
+]</li>
+</ol>
+<img src = "images/scenario2.jpg" style = "width: 80%" >
+<div style = "padding-left: 30px">
+<li>
+Crystallography shows myosin in pre-powerstroke position with P<sub>i</sub> in the active site
+</li>
+<li>
+Myosin only in a post-powerstroke position when P<sub>i</sub> is absent from active site
+</li>
+<li>
+Movement of P<sub>i</sub> from active site into the P<sub>i</sub> exit tunnel is rapid
+</li>
+<li>
+Suggests why functional assay observe slower P<sub>i</sub>-release rate
+</li>
+–
+<li>
+<b> Provides a uniyfing theory between the functional/structural views</b>
+</div>
+<h1 style="margin-bottom: 20px">
+S217A mutation traps P<sub>i</sub> in the active site
+</h1>
 .pull-left[
-&lt;img src = "images/forgacs2009.jpg" style = "margin-bottom: 0px; padding-bottom: 0px; width: 100%; margin-top: 0px; padding-left: 0px" &gt;
-&lt;div style="margin-top: 100px"&gt;
-&lt;font color = "grey"&gt;Forgacs 2009; Llinas 2015]&lt;/font&gt;
-&lt;/div&gt;
+<img src = "images/forgacs2009.jpg" style = "margin-bottom: 0px; padding-bottom: 0px; width: 100%; margin-top: 0px; padding-left: 0px" >
+<div style="margin-top: 100px">
+<p><font color = "grey">Forgacs 2009; Llinas 2015]</font></p>
+</div>
+<p>.pull-right[
+.center[<img src="images/llinas1x.jpg" alt="Llinas 2015" />]]
+—
+# S217A mutation traps P<sub>i</sub> in the active site
+.pull-left[</p>
+<h4 style="margin-bottom: 0px; padding-left: 60px">
+P<sub>i</sub>-release rates (s<sup>-1</sup>)
+</h4>
+<div class="figure"><span id="fig:unnamed-chunk-1"></span>
+<img src="static/lab/slides_files/figure-html/unnamed-chunk-1-1.png" alt="At 30uM actin" width="480" />
+<p class="caption">
+Figure 1: At 30uM actin
+</p>
+</div>
+<br>
+<br>
+<h2 style="margin-top: 0px; padding-left: 30px; padding-bottom: 50px">
+P<sub>i</sub>-release ~10-fold slower
+</h2>
+<p>]
 .pull-right[
-.center[![Llinas 2015](images/llinas1x.jpg)]
+.center[<img src="images/llinas1x.jpg" alt="Llinas 2015" />]]</p>
+<div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px">
+<p><font color = "grey"><i>*At 30 µM Actin</i> <br> <br>Forgacs 2009; Llinas 2015; Gunter 2020</font></p>
+</div>
+</div>
+<div id="expected-outcomes---a-schematic" class="section level1">
+<h1>Expected Outcomes? - A Schematic</h1>
+<p>.left-column[
+### 1) Powerstroke occurs first]
+<img src = "images/s1-model.jpg" style = "width: 80%" style = 'margin-bottom: 0px'></p>
+–
+<h5 style = 'margin-top: 0px; padding-left: 0px'>
+High [P<sub>i</sub>] or S217A mutation should not change the magnitude or rate of the powerstroke
+</h4>
+</div>
+<div id="analysis---automated-event-detection" class="section level1">
+<h1>Analysis - Automated Event Detection</h1>
+<div id="hidden-markov-model-changepoint-analysis" class="section level3">
+<h3>Hidden-Markov Model + Changepoint Analysis</h3>
+&lt;img src = “images/analysis2/plot001-bars.jpg” width = “1000”, height = “200”&gt;
+<div style="margin-top: 200px">
+<p><font color = "grey" size = 3> Sleep 2001; Capitanio 2006; Blackwell 2021 <br>
+R packages: {depmixS4}, {changepoint}, {tidyverse}<font></p>
+</div>
+<h1 style="padding-bottom: 0px">
+Analysis - Calculating Displacement Distributions
+</h1>
+<div style = "float: right; width: 55%;padding-top: 150px"">
+<img src = "images/analysis2/analyzed-trace-animated/plot001.png" > 
+</div>
+<div style="float: left; width: 45%; padding-top: 50px">
+<p><img src="images/dotplot/plot011.png" ></p>
+</div>
+</div>
+</div>
+<div id="results---is-the-displacement-reduced" class="section level1">
+<h1>Results - Is the displacement reduced?</h1>
+<p>.center[</p>
+<p><img src="static/lab/slides_files/figure-html/step-1.png" width="960" />
+]</p>
+<table style="width:6%;">
+<colgroup>
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>### .center[WT has a similiar displacement in both 0mM-Pi and 30mM-Pi]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td># Results - Is the displacement reduced?
+.center[</td>
+</tr>
+<tr class="even">
+<td><img src="static/lab/slides_files/figure-html/step2-1.png" width="1440" />
+]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="results---is-the-displacement-reduced-1" class="section level1">
+<h1>Results - Is the displacement reduced?</h1>
+<p>.center[</p>
+<p><img src="static/lab/slides_files/figure-html/step3-1.png" width="1440" />
 ]
----
-# S217A mutation traps P&lt;sub&gt;i&lt;/sub&gt; in the active site
-.pull-left[
-
-&lt;h4 style = "margin-bottom: 0px; padding-left: 60px"&gt; P&lt;sub&gt;i&lt;/sub&gt;-release rates (s&lt;sup&gt;-1&lt;/sup&gt;) &lt;/h4&gt;
-
-![At 30uM actin](slides_files/figure-html/unnamed-chunk-1-1.png)
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 style = 'margin-top: 0px; padding-left: 30px; padding-bottom: 50px'&gt;P&lt;sub&gt;i&lt;/sub&gt;-release ~10-fold slower&lt;/h2&gt;
-]
-.pull-right[
-.center[![Llinas 2015](images/llinas1x.jpg)]
-]
-
-&lt;div style="position: fixed; bottom: 0; left: 0; padding-bottom: 20px; padding-left: 20px"&gt;
-&lt;font color = "grey"&gt;&lt;i&gt;*At 30 &amp;micro;M Actin&lt;/i&gt; &lt;br&gt; &lt;br&gt;Forgacs 2009; Llinas 2015; Gunter 2020&lt;/font&gt;
-&lt;/div&gt;
-
----
-# Single Molecule Laser Trap
-.pull-left[
-&lt;h3 style = "margin-bottom: 0px"&gt; WT and mutant S217A myo-Va &lt;/h3&gt;
-&lt;h3 style = "margin-top: 5px; padding-left: 20px"&gt;
-&lt;li &gt;S1 w/ 1-IQ
-&lt;/li&gt;
-&lt;/h3&gt;
-
-&lt;h3 style = "margin-bottom: 5px"&gt; Laser Trap &lt;/h3&gt;
-&lt;h3 style = 'margin-top: 0px; margin-bottom: 0px; padding-left: 20px'&gt; 
-&lt;li&gt; Adhered with Anti-myoC 
-&lt;li style = "padding-left: 0px"&gt; 100 &amp;micro;M ATP &lt;/li&gt;
-&lt;/h3&gt;
-&lt;h3 style = "margin-bottom: 5px"&gt; Conditions &lt;/h3&gt;
-&lt;h4 style = 'margin-top: 0px; margin-bottom: 0px; padding-left: 20px'&gt; 
-1) WT 0mM-Pi &lt;br&gt;
-2) WT 30mM-Pi &lt;br&gt;
-3) S217A 0mM-Pi &lt;br&gt;
-4) S217A 30mM-Pi 
-
-&lt;/h4&gt;
-]
-.pull-right[
-&lt;img src = "mike/labeled-trap.png" &gt;
-&lt;h3 style = "padding-left: 90px"&gt; Trap stiffness: 0.04pN/nm 
-&lt;br&gt;
-Sampling Frequency: 5000 Hz
-&lt;/h3&gt;
-]
----
-# Expected Outcomes? - A Schematic
-
-.left-column[
-### 1) Powerstroke occurs first
-]
-&lt;img src = "images/s1-model.jpg" style = "width: 80%" style = 'margin-bottom: 0px'&gt;
-
---
-&lt;h5 style = 'margin-top: 0px; padding-left: 0px'&gt; High [P&lt;sub&gt;i&lt;/sub&gt;] or S217A mutation should not change the magnitude or rate of the powerstroke&lt;/h4&gt;
----
-# Expected Outcomes? - A Schematic
-.left-column[
-## 2) P&lt;sub&gt;i&lt;/sub&gt;-release gates stroke
-]
-&lt;img src = "images/s2-model.jpg" style = "width: 80%"&gt;
---
-&lt;h5 style = 'margin-top: 0px'&gt; High [P&lt;sub&gt;i&lt;/sub&gt;] or S217A mutation should decrease/abolish the magnitude and/or rate of the powerstroke&lt;/h5&gt;
----
-# Analysis - Automated Event Detection
-### Hidden-Markov Model + Changepoint Analysis
-&lt;img src = "images/analysis2/plot001-bars.jpg" width = "1000", height = "200"&gt;
-&lt;div  style = "margin-top: 200px"&gt;
-&lt;font color = "grey" size = 3&gt; Sleep 2001; Capitanio 2006; Blackwell 2021 &lt;br&gt;
-                              R packages: {depmixS4}, {changepoint}, {tidyverse}&lt;font&gt;
-&lt;/div&gt;
----
-# Analysis - Automated Event Detection
-### Hidden-Markov Model + Changepoint Analysis
-&lt;video preload="none" autoplay muted width="1000" height="200"&gt;
- &lt;source src="images/analysis2/5-sec/analysis-5-sec-animated.mp4" type="video/mp4"&gt;
-  Your browser does not support the video tag.
-&lt;/video&gt;
----
-&lt;h1 style = "padding-bottom: 0px"&gt; Analysis - Calculating Displacement Distributions &lt;/h1&gt;
-&lt;div style = "float: right; width: 55%;padding-top: 150px""&gt;
-&lt;img src = "images/analysis2/analyzed-trace-animated/plot001.png" &gt; 
-&lt;/div&gt;
-
-&lt;div style = "float: left; width: 45%; padding-top: 50px"&gt;
-&lt;img src="images/dotplot/plot011.png" &gt;
-&lt;/div&gt; 
----
-&lt;h1 style = "padding-bottom: 0px"&gt; Analysis - Calculating Displacement Distributions &lt;/h1&gt;
-&lt;div style = "float: right; width: 55%;padding-top: 150px""&gt;
-&lt;video autoplay muted preload="auto" width="1000" height="150" style = "padding-top: 0px"&gt; 
- &lt;source src="images/analysis2/analyzed-trace-animated/analysis-whole-trace.mp4" type="video/mp4"&gt;
-  Your browser does not support the video tag. 
-&lt;/video&gt;
-&lt;/div&gt;
-&lt;div style = "float: left; width: 45%; padding-top: 50px"&gt;
-&lt;video autoplay muted preload="auto" width="1000" &gt;
- &lt;source src="images/dotplot/dot.mp4" type="video/mp4"&gt;
-  Your browser does not support the video tag. 
-&lt;/video&gt;
-&lt;/div&gt; 
----
+—
 # Results - Is the displacement reduced?
-.center[
-
-![](slides_files/figure-html/step-1.png)&lt;!-- --&gt;
+.center[</p>
+<p><img src="static/lab/slides_files/figure-html/step4-1.png" width="1440" />
 ]
-
---
-### .center[WT has a similiar displacement in both 0mM-Pi and 30mM-Pi]
----
-# Results - Is the displacement reduced?
-.center[
-
-![](slides_files/figure-html/step2-1.png)&lt;!-- --&gt;
-]
-
----
-# Results - Is the displacement reduced?
-.center[
-
-![](slides_files/figure-html/step3-1.png)&lt;!-- --&gt;
-]
----
-# Results - Is the displacement reduced?
-.center[
-
-![](slides_files/figure-html/step4-1.png)&lt;!-- --&gt;
-]
---
+–
 .center[### Likely no reduction in magnitude of displacement in S217A]
----
+—
 # What is rate of transition between unbound to bound?
-##.center[Ensemble Average]
-
-&lt;img src = "images/ee-how-to/start-trace.jpg" style = "width: 20%; padding-left:400px"&gt;
-
----
-# What is rate of transition between unbound to bound?
-&lt;h2 style = "padding-bottom: 0px; text-align: center; margin-bottom: 0px"&gt;Ensemble Average&lt;/h2&gt;
-&lt;video autoplay muted preload="auto" width="700" height="400" style = "padding-top: 0px"&gt;
- &lt;source src="images/ee-how-to/gif/ee-how-to.mp4" type="video/mp4"&gt; 
-  Your browser does not support the video tag. 
-&lt;/video&gt;
-
----
-# What is rate of transition between unbound to bound?
-&lt;h2 style = "padding-bottom: 0px; text-align: center; margin-bottom: 0px"&gt;Ensemble Average&lt;/h2&gt;
-&lt;img src = "images/ee-how-to/end-ee.jpg" style = "width: 15%; float: left, padding-top: 0px; padding-left: 20px"&gt; 
-&lt;video autoplay muted preload="auto" width="650" height="350" style = "padding-top: 50px; padding-left: 125px; float: right;"&gt;
- &lt;source src="images/ee-figs/gif3/ee.mp4" type="video/mp4"&gt;
-  Your browser does not support the video tag.
-&lt;/video&gt;
----
-&lt;h1 style = "margin-bottom: 0px"&gt;S217A Simulations - What should we observe?&lt;/h1&gt;
-&lt;h3 style = "margin-bottom: 0px; margin-top: 15px"&gt; Data simulated with a slowed P&lt;sub&gt;i&lt;/sub&gt; release (30 s&lt;sup&gt;-1&lt;/sup&gt;) &lt;/h3&gt;
-&lt;img src = 'images/ee-lm-sim1.jpg' style = "width: 90%"&gt;
----
-&lt;h1 style = "margin-bottom: 0px"&gt;S217A Simulations - What should we observe?&lt;/h1&gt;
-&lt;h3 style = "margin-bottom: 0px; margin-top: 15px"&gt; Data simulated with a slowed P&lt;sub&gt;i&lt;/sub&gt; release (30 s&lt;sup&gt;-1&lt;/sup&gt;) &lt;/h3&gt;
-&lt;img src = 'images/ee-lm-sim2.jpg' style = "width: 90%"&gt;
----
-&lt;h2 style = "margin-bottom: 20px"&gt; Results - Is the rate of transition between unbound/bound reduced? &lt;/h2&gt;
-&lt;img src = "images/ee1.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' &gt;
----
-&lt;h2 style = "margin-bottom: 20px"&gt; Results - No change in transition rate &lt;/h2&gt;
-&lt;img src = "images/ee2.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' &gt;
----
-&lt;h2 style = "margin-bottom: 20px"&gt; Results - All conditions are identical to Powerstroke First Simulation &lt;/h2&gt;
-&lt;img src = "images/ee3.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' &gt;
----
-# Conclusions 
-&lt;h3 style = 'margin-bottom: 0px'&gt;&lt;li&gt; In high [P&lt;sub&gt;i&lt;/sub&gt;] and with the S217A mutation - myosin produced a displacement&lt;/li&gt;&lt;/h3&gt;
-
---
-&lt;h3 style = 'margin-bottom: 0px'&gt;&lt;li&gt; There was no change in the rate of transition between unbound/bound&lt;/li&gt;&lt;/h3&gt;
-
---
-
-&lt;h3 style = 'margin-bottom: 0px'&gt;&lt;li&gt; Data are consistent with a model where the powerstroke preceeds P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/li&gt;&lt;/h3&gt;
-&lt;img src = "images/sim-model-1.jpg" style = "width: 60%; margin-left: auto; margin-right: auto; display: block"&gt; 
-
----
-# Conclusions 
-&lt;h3 style = "margin-bottom: 0px"&gt;Providing insight into how myosin transduces energy&lt;/h3&gt;
-&lt;div style = "display: flex; width: 50%; float: left"&gt;
-&lt;img src = "images/sim-model-1.jpg" style = "width: 100%; margin-top: 30px; margin-right: auto; display: block"&gt;
-&lt;/div&gt;
-
-&lt;div style = "display: flex; width: 50%; float: right"&gt;
-&lt;div style ="width: 90%; float: left;"&gt;
-&lt;img src = "images/myosin.gif" style = "width: 80%;padding-left: 100px" &gt;
-&lt;br&gt;
-&lt;img src = "images/warshaw-myov.gif" style = "width:60%; padding-left:160px;margin-top: 40px" &gt;
-&lt;/div&gt;
-
----
+##.center[Ensemble Average]</p>
+<p><img src = "images/ee-how-to/start-trace.jpg" style = "width: 20%; padding-left:400px"></p>
+</div>
+<div id="what-is-rate-of-transition-between-unbound-to-bound" class="section level1">
+<h1>What is rate of transition between unbound to bound?</h1>
+<h2 style="padding-bottom: 0px; text-align: center; margin-bottom: 0px">
+Ensemble Average
+</h2>
+<img src = "images/ee-how-to/end-ee.jpg" style = "width: 15%; float: left, padding-top: 0px; padding-left: 20px">
+<video autoplay muted preload="auto" width="650" height="350" style = "padding-top: 50px; padding-left: 125px; float: right;">
+<source src="images/ee-figs/gif3/ee.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+—
+<h1 style="margin-bottom: 0px">
+S217A Simulations - What should we observe?
+</h1>
+<h3 style="margin-bottom: 0px; margin-top: 15px">
+Data simulated with a slowed P<sub>i</sub> release (30 s<sup>-1</sup>)
+</h3>
+<div id="section" class="section level2">
+<h2><img src = 'images/ee-lm-sim1.jpg' style = "width: 90%"></h2>
+<h1 style="margin-bottom: 0px">
+S217A Simulations - What should we observe?
+</h1>
+<h3 style="margin-bottom: 0px; margin-top: 15px">
+Data simulated with a slowed P<sub>i</sub> release (30 s<sup>-1</sup>)
+</h3>
+</div>
+<div id="section-1" class="section level2">
+<h2><img src = 'images/ee-lm-sim2.jpg' style = "width: 90%"></h2>
+<h2 style="margin-bottom: 20px">
+Results - Is the rate of transition between unbound/bound reduced?
+</h2>
+</div>
+<div id="section-2" class="section level2">
+<h2><img src = "images/ee1.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' ></h2>
+<h2 style="margin-bottom: 20px">
+Results - No change in transition rate
+</h2>
+</div>
+<div id="section-3" class="section level2">
+<h2><img src = "images/ee2.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' ></h2>
+<h2 style="margin-bottom: 20px">
+Results - All conditions are identical to Powerstroke First Simulation
+</h2>
+</div>
+<div id="section-4" class="section level2">
+<h2><img src = "images/ee3.jpg" style = 'width: 90%; margin-bottom: 0px; padding-bottom: 0px' ></h2>
+</div>
+</div>
+<div id="conclusions" class="section level1">
+<h1>Conclusions</h1>
+<h3 style="margin-bottom: 0px">
+<li>
+In high [P<sub>i</sub>] and with the S217A mutation - myosin produced a displacement
+</li>
+</h3>
+–
+<h3 style="margin-bottom: 0px">
+<li>
+There was no change in the rate of transition between unbound/bound
+</li>
+</h3>
+<p>–</p>
+<h3 style="margin-bottom: 0px">
+<li>
+Data are consistent with a model where the powerstroke preceeds P<sub>i</sub>-release
+</li>
+</h3>
+<p><img src = "images/sim-model-1.jpg" style = "width: 60%; margin-left: auto; margin-right: auto; display: block"></p>
 class: inverse
 # Acknowledgements
-&lt;div style = "float: left; width: 50%"&gt;
-&lt;h2 style = "margin-bottom: 5px"&gt; Debold Lab&lt;/h2&gt;
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 20px"&gt; Ned Debold, PhD &lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 20px"&gt; Chris Marang, MS &lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 40px;"&gt;
-&lt;li style = "padding-left: 20px"&gt; Mike Woodward, MS &lt;/li&gt;&lt;/h3&gt;
-
-&lt;h2 style = "margin-bottom: 5px; maring-top: 40px;"&gt;Open Source Software&lt;/h2&gt;
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 20px"&gt; R/R Studio/R Community &lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 20px"&gt; Linux/Ubuntu &lt;/li&gt;&lt;/h3&gt; 
-
-&lt;/div&gt;
-
-&lt;div style = "float: right; width: 50%"&gt;
-&lt;h2 style = "margin-bottom: 5px"&gt;Yengo Lab&lt;/h2&gt;
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 20px"&gt; Chris Yengo, PhD&lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 60px";"&gt;
-&lt;li style = "padding-left: 20px"&gt;Laura Gunther, PhD &lt;/li&gt;&lt;/h3&gt; 
-
-&lt;h2 style = "margin-bottom: 0px; margin-top: 40px;"&gt;The Scott Fam&lt;/h2&gt;
-&lt;h3 style = "margin-bottom: 5px; margin-top: 0px"&gt; 
-&lt;li style = "padding-left: 20px"&gt;Megan&lt;/li&gt;&lt;/h3&gt;
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 30px"&gt; Marilyn (3) &lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 0px";"&gt;
-&lt;li style = "padding-left: 30px"&gt;Mollie (2) &lt;/li&gt;&lt;/h3&gt; 
-&lt;h3 style = "margin-top: 0px; margin-bottom: 40px";"&gt;
-&lt;li style = "padding-left: 30px"&gt; Anna (3 mo.) &lt;/li&gt;&lt;/h3&gt;
-&lt;/div&gt;
-
----
-class: inverse
-# Extra Slides Ahead
----
----
-# Conclusions 
-&lt;h3 style = 'margin-bottom: 0px'&gt; Provides additional insight into how motors couple force production and energetics&lt;/h3&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;div style = "display: flex"&gt;
-&lt;div style ="width: 49%; float: left;"&gt;
-&lt;img src = "images/myosin.gif" style = "width: 100%;padding-left: 50px" &gt;
-&lt;/div&gt;
-&lt;div style ="width: 25%, float: right;"&gt;
-&lt;img src = "images/warshaw-myov.gif" style = "width:60%; padding-left:200px" &gt;
-&lt;/div&gt;
-&lt;/div&gt;
-.footnote[Vale &amp; Milligan 2000; David Warshaw Lab Website]
----
-&lt;h1 style = "text-align: center;"&gt;P&lt;sub&gt;i&lt;/sub&gt; is released through the backdoor&lt;/h1&gt;
-.pull-left[
-.center[![Llinas 2015](images/llinas1.jpg)]
-]
-
+<div style="float: left; width: 50%">
+<h2 style="margin-bottom: 5px">
+Debold Lab
+</h2>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 20px"> Ned Debold, PhD </li></h3>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 20px"> Chris Marang, MS </li></h3>
+<h3 style="margin-top: 0px; margin-bottom: 40px;">
+<li style="padding-left: 20px">
+Mike Woodward, MS
+</li>
+</h3>
+<h2 style="margin-bottom: 5px; maring-top: 40px;">
+Open Source Software
+</h2>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 20px"> R/R Studio/R Community </li></h3>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 20px"> Linux/Ubuntu </li></h3>
+</div>
+<div style="float: right; width: 50%">
+<h2 style="margin-bottom: 5px">
+Yengo Lab
+</h2>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 20px"> Chris Yengo, PhD</li></h3>
+<h3 style = "margin-top: 0px; margin-bottom: 60px";">
+<li style = "padding-left: 20px">Laura Gunther, PhD </li></h3>
+<h2 style="margin-bottom: 0px; margin-top: 40px;">
+The Scott Fam
+</h2>
+<h3 style="margin-bottom: 5px; margin-top: 0px">
+<li style="padding-left: 20px">
+Megan
+</li>
+</h3>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 30px"> Marilyn (3) </li></h3>
+<h3 style = "margin-top: 0px; margin-bottom: 0px";">
+<li style = "padding-left: 30px">Mollie (2) </li></h3>
+<h3 style = "margin-top: 0px; margin-bottom: 40px";">
+<li style = "padding-left: 30px"> Anna (3 mo.) </li></h3>
+</div>
+<h1 style="text-align: center;">
+P<sub>i</sub> is released through the backdoor
+</h1>
+<p>.pull-left[
+.center[<img src="images/llinas1.jpg" alt="Llinas 2015" />]]</p>
 .pull-right[
-.center[&lt;img src = "images/myoVI-pi-release.jpg" style = "width: 60%" &gt;]
-]
-.footnote[Llinas et al. 2015]
----
+.center[<img src = "images/myoVI-pi-release.jpg" style = "width: 60%" >]]
+.footnote[Llinas et al. 2015]
+—
 class: center
-# P&lt;sub&gt;i&lt;/sub&gt; is released through the backdoor
-&lt;img src="images/pi-release-figs/1pps-gif.jpg" style = "width: 80%"&gt;
----
+# P<sub>i</sub> is released through the backdoor
+<img src="images/pi-release-figs/1pps-gif.jpg" style = "width: 80%">
+—
 class: center
-# P&lt;sub&gt;i&lt;/sub&gt; is released through the backdoor
-&lt;img src="images/pi-release-figs/pi-release.gif" style = "width: 80%"&gt;
----
-# S217A blocks entry of P&lt;sub&gt;i&lt;/sub&gt; into the release tunnel
+# P<sub>i</sub> is released through the backdoor
+<img src="images/pi-release-figs/pi-release.gif" style = "width: 80%">
+—
+# S217A blocks entry of P<sub>i</sub> into the release tunnel
 .left-column[
-#### 10-fold slower Pi-release (Forgacs et al. 2009)
-#### Disrupts P&lt;sub&gt;i&lt;/sub&gt;R2 to P&lt;sub&gt;i&lt;/sub&gt;R1 transition
-]
-&lt;img src="images/llinas-mutation.jpg" style = "width: 80%; margin-left: auto" &gt;
----
-# S217A has a slow P&lt;sub&gt;i&lt;/sub&gt;-release
+#### 10-fold slower Pi-release (Forgacs et al. 2009)
+#### Disrupts P<sub>i</sub>R2 to P<sub>i</sub>R1 transition]
+<img src="images/llinas-mutation.jpg" style = "width: 80%; margin-left: auto" >
+—
+# S217A has a slow P<sub>i</sub>-release
 .pull-left[
-&lt;img src = "images/pi-release-figs/wt-arrow.jpg" &gt;
-### k&lt;sub&gt;-p&lt;/sub&gt; = 198 s&lt;sup&gt;-1&lt;/sup&gt;
-]
+<img src = "images/pi-release-figs/wt-arrow.jpg" >
+### k<sub>-p</sub> = 198 s<sup>-1</sup>]
 .pull-right[
-&lt;img src = "images/pi-release-figs/s217a-arrow.jpg" &gt;
-### k&lt;sub&gt;-p&lt;/sub&gt; = 16 s&lt;sup&gt;-1&lt;/sup&gt;
-]
+<img src = "images/pi-release-figs/s217a-arrow.jpg" >
+### k<sub>-p</sub> = 16 s<sup>-1</sup>]
 .footnote[Forgacs 2009, Llinas 2015]
----
----
+—
+—
 # possible skip Two Scenarios &amp; A Testable Hypothesis
 .left-column[
-&lt;h2 style="color:black"&gt; 1) Stroke occurs before P&lt;sub&gt;i&lt;/sub&gt;-release &lt;/h2&gt;
-&lt;h2 style="color:black"&gt; 2)  P&lt;sub&gt;i&lt;/sub&gt;-release gates the powerstroke &lt;/h2&gt;
+<h2 style="color:black">
+<ol style="list-style-type: decimal">
+<li>Stroke occurs before P<sub>i</sub>-release
+</h2>
+<h2 style="color:black">
+<ol start="2" style="list-style-type: decimal">
+<li>P<sub>i</sub>-release gates the powerstroke
+</h2>
 ]
-&lt;img src="images/xb-zoom-scenarios.jpg" style="width: 45%; padding-left: 150px"&gt;
-&lt;div style = "padding-left: 300px"&gt;
-&lt;h3&gt; How can we increase the probability of P&lt;sub&gt;i&lt;/sub&gt; being in the active site? &lt;/h3&gt;
-&lt;li&gt; High concentrations of P&lt;sub&gt;i&lt;/sub&gt; (30mM) &lt;/li&gt;
-&lt;b style = "padding-left: 150px"&gt;OR&lt;/b&gt;
-&lt;li&gt; Trap P&lt;sub&gt;i&lt;/sub&gt; in the active site with a mutation &lt;/li&gt;
-&lt;/div&gt;
-    </textarea>
-<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
-<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false,
-"ratio": "16:9"
-});
-if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
-  window.dispatchEvent(new Event('resize'));
-});
-(function(d) {
-  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
-  if (!r) return;
-  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
-  d.head.appendChild(s);
-})(document);
-
-(function(d) {
-  var el = d.getElementsByClassName("remark-slides-area");
-  if (!el) return;
-  var slide, slides = slideshow.getSlides(), els = el[0].children;
-  for (var i = 1; i < slides.length; i++) {
-    slide = slides[i];
-    if (slide.properties.continued === "true" || slide.properties.count === "false") {
-      els[i - 1].className += ' has-continuation';
-    }
-  }
-  var s = d.createElement("style");
-  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
-  d.head.appendChild(s);
-})(document);
-// delete the temporary CSS (for displaying all slides initially) when the user
-// starts to view slides
-(function() {
-  var deleted = false;
-  slideshow.on('beforeShowSlide', function(slide) {
-    if (deleted) return;
-    var sheets = document.styleSheets, node;
-    for (var i = 0; i < sheets.length; i++) {
-      node = sheets[i].ownerNode;
-      if (node.dataset["target"] !== "print-only") continue;
-      node.parentNode.removeChild(node);
-    }
-    deleted = true;
-  });
-})();
-(function() {
-  "use strict"
-  // Replace <script> tags in slides area to make them executable
-  var scripts = document.querySelectorAll(
-    '.remark-slides-area .remark-slide-container script'
-  );
-  if (!scripts.length) return;
-  for (var i = 0; i < scripts.length; i++) {
-    var s = document.createElement('script');
-    var code = document.createTextNode(scripts[i].textContent);
-    s.appendChild(code);
-    var scriptAttrs = scripts[i].attributes;
-    for (var j = 0; j < scriptAttrs.length; j++) {
-      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
-    }
-    scripts[i].parentElement.replaceChild(s, scripts[i]);
-  }
-})();
-(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
-
-<script>
-slideshow._releaseMath = function(el) {
-  var i, text, code, codes = el.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
-  }
-};
-slideshow._releaseMath(document);
-</script>
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
-  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
-    script.src  = script.src.replace(/^https?:/, '');
-  document.getElementsByTagName('head')[0].appendChild(script);
-})();
-</script>
-  </body>
-</html>
+<img src="images/xb-zoom-scenarios.jpg" style="width: 45%; padding-left: 150px">
+<div style="padding-left: 300px">
+<h3>
+How can we increase the probability of P<sub>i</sub> being in the active site?
+</h3>
+<li>
+High concentrations of P<sub>i</sub> (30mM)
+</li>
+<b style = "padding-left: 150px">OR</b>
+<li>
+Trap P<sub>i</sub> in the active site with a mutation
+</li>
+</div></li>
+</ol></li>
+</ol>
+</div>
