@@ -114,7 +114,7 @@ staticDir = "static"
             degree = "**Pursuing Ph.D. in Kinesiology *(ETA Spring 2022)***"
             college = "University of Massachusetts Amherst"
             dates = "2019 - *Present*"
-            thesis_title = "TBD"
+            thesis_title = "What is the relative timing between myosin's powerstroke and phosphate release?"
             thesis_link = "#"
 
         [[params.education.list]]
@@ -176,7 +176,15 @@ staticDir = "static"
         types = ["Journal Articles", "Proceedings"]
  
    [[params.publication.list]]
-            title = " FRET and optical trapping reveal mechanisms of actin-activation of the power stroke and phosphate-release in myosin V"
+            title = "Myosin's powerstroke occurs prior to the release of phosphate from the active site"
+            authors = "Scott B, Marang C, Woodward M, & Debold EP"
+            date = "2021"
+            journal = "Cytoskeleton. https://doi.org/10.1002/cm.21682"
+            link = "publications/scott-marang-2021-cytoskeleton.pdf"
+            type = "Journal Articles"
+            
+    [[params.publication.list]]
+            title = "FRET and optical trapping reveal mechanisms of actin-activation of the power stroke and phosphate-release in myosin V"
             authors = "Gunther LK, Rohde JA, Tang W, Cirilo JA Jr, Marang CP, Scott BD, Thomas DD, Debold EP, Yengo CM"
             date = "2020"
             journal = "J Biol Chem. doi: 10.1074/jbc.RA120.015632"
@@ -213,9 +221,9 @@ staticDir = "static"
         icon = "fas fa-project-diagram"
 
         [[params.project.list]]
-            title = "biophysr"
-            url = "https://github.com/brentscott93/biophysr/blob/master/README.md"
-            description = "Automated analysis of muscle biophysics data using *R Shiny*"
+            title = "lasertrapr"
+            url = "https://lasertrapr.app"
+            description = "Automated analysis of laser trap data using *R Shiny*"
     #    [[params.project.list]]
     #        title = "project"
      #       url = "#"
@@ -236,14 +244,14 @@ staticDir = "static"
         icon = "fas fa-cogs"
 
         [[params.skill.list]]
-            skill = "In Vitro Motility"
-            skillrating = 85
-        [[params.skill.list]]
             skill = "Laser Trapping"
             skillrating = 90
         [[params.skill.list]]
             skill = "Data Analysis (R programming)"
             skillrating = 95
+        [[params.skill.list]]
+            skill = "In Vitro Motility"
+            skillrating = 85
 
     # Hobby section
     [params.hobby]
