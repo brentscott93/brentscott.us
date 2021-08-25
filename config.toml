@@ -162,10 +162,6 @@ staticDir = "static"
             dates = "UMass Amherst"
             company = "KIN 100 (Introduction to Kinesiology); KIN 110; KIN 394 (Applied Exercise Testing)"
 
-        
-    
-    
-
     # Publication section
     [params.publication]
         title = "Publications"
@@ -191,7 +187,7 @@ staticDir = "static"
             link = "publications/gunther-2020-jbc.pdf"
             type = "Journal Articles"
             
-       [[params.publication.list]]
+    [[params.publication.list]]
             title = " Positional Isomers of a Non-Nucleoside Substrate Differentially Affect Myosin Function. "
             authors = "Mike Woodward, Eric Ostrander, Seung P. Jeong, Xiarong Liu, Brent Scott, Matt Unger, Jianhan Chen, Dhandapani Venkataraman, Edward P. Debold"
             date = "2020"
@@ -206,7 +202,22 @@ staticDir = "static"
         #    journal = "Journal of Field 52 (16), 9033-9044"
         #    link = "#"
          #   type = "Journal Articles"
-		
+        [[params.publication.list]]
+            title = "Enhancing Cardiac Myosin Function with an Abiotic Energy Source"
+            authors = "Mike K Woodward, Eric Ostrander, Brent D Scott, Christopher Marang, Xiaorong Liu, Jianhan Chen, Dhandapani Venkataraman, Edward P Debold"
+            date = "2021"
+            journal = "Biophysical Journal 120 (3), 249a"
+            link = "https://www.cell.com/biophysj/pdf/S0006-3495(20)32529-7.pdf"
+            type = "Proceedings"
+            
+		 [[params.publication.list]]
+            title = "Tirasemtiv and dATP Synergistically Reverse the Acidosis-induced Depression of Myosin’s Force and Motion Generating Capacity"
+            authors = "Christopher P Marang, Brent D Scott, Mike K Woodward, Edward P Debold"
+            date = "2021"
+            journal = "Biophysical Journal 120 (3), 60a0"
+            link = "https://www.cell.com/biophysj/pdf/S0006-3495(20)31505-8.pdf"
+            type = "Proceedings"
+            
         [[params.publication.list]]
             title = " Rapid Onset Vasodilation in the Leg is Greater in Habitual Endurance Runners."
             authors = "Coolbaugh C., Bush E., Sabin S., Scott B., Damon B., & Towse T."
