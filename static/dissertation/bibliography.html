@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Bibliography | _main.knit</title>
   <meta name="description" content="" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Bibliography | _main.knit" />
   <meta property="og:type" content="book" />
@@ -31,8 +31,9 @@
   
 <link rel="prev" href="methods.html"/>
 
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,9 +49,17 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plugins.Unzoom-1.0/unzoom.js"></script>
 
 
 
@@ -92,6 +101,14 @@ div.csl-indent {
 <li><a href="index.html#what-is-the-relative-timing-between-myosins-powerstroke-and-pi-release">What is the relative timing between myosin’s powerstroke and P<sub>i</sub>-release?</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Dissertation of Brent Scott</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html"><i class="fa fa-check"></i>Prerequisites</a>
+<ul>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#muscle-structure"><i class="fa fa-check"></i>Muscle Structure</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#myosincross-bridge-cycle"><i class="fa fa-check"></i>Myosin/Cross-bridge cycle</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#unconventional-myosins"><i class="fa fa-check"></i>Unconventional myosins</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#the-laser-trap"><i class="fa fa-check"></i>The Laser trap</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#laser-trap-data-is-a-time-series"><i class="fa fa-check"></i>Laser trap data is a time series</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -148,6 +165,16 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#laser-trap-assay"><i class="fa fa-check"></i><b>3.2</b> Laser trap assay</a></li>
 <li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#ultra-fast-force-clamp"><i class="fa fa-check"></i><b>3.3</b> Ultra-fast force clamp</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#step-by-step-single-molecule-event-identification"><i class="fa fa-check"></i><b>3.4</b> Step-by-step single molecule event identification</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="methods.html"><a href="methods.html#raw-data"><i class="fa fa-check"></i><b>3.4.1</b> Raw data</a></li>
+<li class="chapter" data-level="3.4.2" data-path="methods.html"><a href="methods.html#processed-data"><i class="fa fa-check"></i><b>3.4.2</b> Processed Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="methods.html"><a href="methods.html#running-mean-variance"><i class="fa fa-check"></i><b>3.4.3</b> Running Mean &amp; Variance</a></li>
+<li class="chapter" data-level="3.4.4" data-path="methods.html"><a href="methods.html#hidden-markov-model-1"><i class="fa fa-check"></i><b>3.4.4</b> Hidden-Markov Model</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methods.html"><a href="methods.html#measure-events"><i class="fa fa-check"></i><b>3.4.5</b> Measure Events</a></li>
+<li class="chapter" data-level="3.4.6" data-path="methods.html"><a href="methods.html#direction-correction"><i class="fa fa-check"></i><b>3.4.6</b> Direction Correction</a></li>
+<li class="chapter" data-level="3.4.7" data-path="methods.html"><a href="methods.html#changepoint-analysis"><i class="fa fa-check"></i><b>3.4.7</b> Changepoint Analysis</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -426,7 +453,6 @@ Yount, R G, D Lawson, and I Rayment. 1995. <span>“Is Myosin a "Back Door" Enzy
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -467,7 +493,7 @@ gitbook.start({
 },
 "download": ["_main.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

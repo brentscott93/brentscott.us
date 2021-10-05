@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Introduction | _main.knit</title>
   <meta name="description" content="" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Introduction | _main.knit" />
   <meta property="og:type" content="book" />
@@ -29,10 +29,11 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
+<link rel="prev" href="prerequisites.html"/>
 <link rel="next" href="literature-review.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,9 +49,17 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plugins.Unzoom-1.0/unzoom.js"></script>
 
 
 
@@ -92,6 +101,14 @@ div.csl-indent {
 <li><a href="index.html#what-is-the-relative-timing-between-myosins-powerstroke-and-pi-release">What is the relative timing between myosin’s powerstroke and P<sub>i</sub>-release?</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Dissertation of Brent Scott</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html"><i class="fa fa-check"></i>Prerequisites</a>
+<ul>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#muscle-structure"><i class="fa fa-check"></i>Muscle Structure</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#myosincross-bridge-cycle"><i class="fa fa-check"></i>Myosin/Cross-bridge cycle</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#unconventional-myosins"><i class="fa fa-check"></i>Unconventional myosins</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#the-laser-trap"><i class="fa fa-check"></i>The Laser trap</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#laser-trap-data-is-a-time-series"><i class="fa fa-check"></i>Laser trap data is a time series</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -148,6 +165,16 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#laser-trap-assay"><i class="fa fa-check"></i><b>3.2</b> Laser trap assay</a></li>
 <li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#ultra-fast-force-clamp"><i class="fa fa-check"></i><b>3.3</b> Ultra-fast force clamp</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#step-by-step-single-molecule-event-identification"><i class="fa fa-check"></i><b>3.4</b> Step-by-step single molecule event identification</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="methods.html"><a href="methods.html#raw-data"><i class="fa fa-check"></i><b>3.4.1</b> Raw data</a></li>
+<li class="chapter" data-level="3.4.2" data-path="methods.html"><a href="methods.html#processed-data"><i class="fa fa-check"></i><b>3.4.2</b> Processed Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="methods.html"><a href="methods.html#running-mean-variance"><i class="fa fa-check"></i><b>3.4.3</b> Running Mean &amp; Variance</a></li>
+<li class="chapter" data-level="3.4.4" data-path="methods.html"><a href="methods.html#hidden-markov-model-1"><i class="fa fa-check"></i><b>3.4.4</b> Hidden-Markov Model</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methods.html"><a href="methods.html#measure-events"><i class="fa fa-check"></i><b>3.4.5</b> Measure Events</a></li>
+<li class="chapter" data-level="3.4.6" data-path="methods.html"><a href="methods.html#direction-correction"><i class="fa fa-check"></i><b>3.4.6</b> Direction Correction</a></li>
+<li class="chapter" data-level="3.4.7" data-path="methods.html"><a href="methods.html#changepoint-analysis"><i class="fa fa-check"></i><b>3.4.7</b> Changepoint Analysis</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -173,8 +200,8 @@ div.csl-indent {
 <h2><span class="header-section-number">1.1</span> Historical Significance of the Cross-Bridge to Muscle Physiology and Kinesiology</h2>
 <p>A fundamental aspect of Kinesiology is centered upon understanding the mechanisms of human motion. Ultimately, every human movement is a direct result of a molecular motor (like myosin) transducing the chemical energy of adenosine triphosphate (ATP) into a mechanical force. Understanding how human skeletal muscle can accomplish the coupling between biochemistry and mechanics has transcended any single field of science over the past century and has required a multi-disciplinary approach to reach the current understanding we currently have on the topic.</p>
 <p>In the early 1900s, pioneers in the field of muscle physiology provided the foundational work in understanding how muscles work. During this time the field of biochemistry was unclear of what the exact mechanisms were that provided a muscle cell with the necessary energy for muscle to contract, which was often contributed to oxygen (or at least some form of an oxidative pathway) <span class="citation">(Bassett 2002)</span> or to “lactic acid” <span class="citation">(Herzog et al. 2015)</span>. In 1920, A.V. Hill observed the liberation of heat during isometric tension of an isolated muscle <span class="citation">(Hill and Hartree 1920)</span> showing that muscular force can be produced without oxygen. His findings ultimately led him to a Nobel Prize in 1922 <span class="citation">(<span>“The <span>Nobel Prize</span> in <span>Physiology</span> or <span>Medicine</span> 1922,”</span> n.d.)</span>. This finding was detailed further when Wallace Fenn demonstrated that when allowed to shorten, a contracting muscle liberates more heat than when held isometrically (now well known as the Fenn effect) <span class="citation">(Fenn 1924)</span>. Subsequently, <span class="citation">Bailey (1937)</span> characterized the abundance of myosin in skeletal muscle and <span class="citation">Engelhardt and Ljubimowa (1939)</span> demonstrated that myosin was indeed responsible for the muscle’s enzymatic activity and consequently the heat production that was observed by Hill and Fenn during their isolated muscle studies years prior. However, despite these early advances there was still no explanation for how a muscle (let alone a myosin molecule) could use ATP to produce force.</p>
-<p>The next major breakthrough propelling the field closer to an answer came in 1954 when a pair of Nature articles from Huxley &amp; Hanson and Huxley &amp; Niedergerke independently provided evidence for muscle contraction via the “sliding filament theory” <span class="citation">(A. F. Huxley and Niedergerke 1954; H. Huxley and Hanson 1954)</span>. Here, the two research groups describe the ability of myosin in the form of thick-filaments to associate with actin filaments causing sarcomere shortening (i.e. contraction) based on structural observations of contracting myofibrils and single muscle fibers. Even so, the sliding filament theory in of itself is not a mechanism of contraction. In 1957, Andrew Huxley provided the first mechanistic hypothesis about how the relative sliding of filaments could occur based upon modeling myosin as a biased Brownian ratchet. This proposal provided the initial groundwork for the modern-day “cross-bridge theory” of muscle contraction <span class="citation">(HUXLEY 1957)</span>.</p>
-<p>After the emergence of these structural perspectives of the actomyosin cross-bridge system biochemists began attempting to align their observations from solution kinetic studies to further explain the structure function relationship of the cross-bridge providing early schematics of the mechanochemical cross-bridge model and what we are now so accustomed to seeing in textbooks and research papers <span class="citation">(Lymn and Taylor 1971)</span>. Since these foundational studies have taken place research into the field of muscle physiology has exploded as technology has advanced temporal and spatial limitations of instrumentation providing unprecedented details into muscle myosin structure and function which has provided a relatively deep understanding (versus the humble origins) of how the cross-bridges cycle from both a biochemical and structural perspective.</p>
+<p>The next major breakthrough propelling the field closer to an answer for the mechanism of molecular force production came in 1954 when a pair of Nature articles from Huxley &amp; Hanson and Huxley &amp; Niedergerke independently provided evidence for muscle contraction via the “sliding filament theory” <span class="citation">(A. F. Huxley and Niedergerke 1954; H. Huxley and Hanson 1954)</span>. Here, the two research groups describe the ability of myosin in the form of thick-filaments to associate with actin filaments causing sarcomere shortening (i.e. contraction) based on structural observations of contracting myofibrils and single muscle fibers. Even so, the sliding filament theory in of itself is not a mechanism of contraction. In 1957, Andrew Huxley provided the first mechanistic hypothesis about how the relative sliding of filaments could occur based upon modeling myosin as a biased Brownian ratchet. This proposal provided the initial groundwork for the modern-day “cross-bridge theory” of muscle contraction <span class="citation">(HUXLEY 1957)</span>.</p>
+<p>After the emergence of these structural perspectives of the actomyosin cross-bridge system biochemists began attempting to align their observations from solution kinetic studies to further explain the structure function relationship of the cross-bridge providing early kinetic schemes of the rates of the various mechanochemical steps/states of the cross-bridge model <span class="citation">(Lymn and Taylor 1971)</span>. Since the completion of these foundational studies research into the field of muscle physiology has exploded as technology has advanced temporal and spatial limitations of instrumentation providing unprecedented details into muscle myosin structure and function which has provided a relatively deep understanding (versus the humble origins) of how the cross-bridges cycle from both a biochemical and structural perspective.</p>
 </div>
 <div id="the-modern-cross-bridge-cycle" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> The Modern Cross-Bridge Cycle</h2>
@@ -185,7 +212,11 @@ div.csl-indent {
 </div>
 <div id="powerstroke-or-pi-release-a-biophysicists-chicken-or-egg-causality-dilemma" class="section level2" number="1.3">
 <h2><span class="header-section-number">1.3</span> Powerstroke or P<sub>i</sub>-Release? a biophysicists “chicken-or-egg” causality dilemma</h2>
-<p>While there are many details in the modern day cross-bridge cycle that are seemingly clear and well-established, there is a serious point of contention that remains in the literature to this day. The problem resides in the transition between the <em>3<sup>rd</sup></em> and <em>4<sup>th</sup></em> step in the model detailed in section <em>1.2</em>. In <strong>one</strong> step, <strong>two</strong> key events are taking place - one mechanical and one biochemical. The mechanical powerstroke and biochemical release of P<sub>i</sub> are collapsed into this single step without an explicit declaration of the timing or sequence relative to one other. <strong>Both these events are triggered by actin binding, but does the powerstroke precede P<sub>i</sub>-release or does P<sub>i</sub>-release “gate” the powerstroke?</strong>. This <em>is</em> <strong>the dilemma</strong>. Interestingly, the Powerstroke First and P<sub>i</sub>-Release First models are <em>both</em> well supported in the literature. The divergence from a common mechanochemical scheme has divided the field for several decades and has ultimately limited the progress of fully understanding how myosin is able to transduce chemical energy into mechanical work as the powerstroke and P<sub>i</sub>-release steps are key events in the transduction process. Ultimately, not understanding the precise order of the biochemical and mechanical events during the cross-bridge cycle prevents progress into the mechanisms underlying the molecular nature of energy conservation (2nd law of thermodynamics) and limits our ability to develop pharmacological interventions to restore function to diseased, mutated, or compromised motors (HCM, DCM, fatigue, etc.).</p>
+<p>While there are many details in the modern day cross-bridge cycle that are seemingly clear and well-established, there is a serious point of contention that remains in the literature to this day. The problem resides in the transition between the <em>3<sup>rd</sup></em> and <em>4<sup>th</sup></em> step in the model detailed in section <em>1.2</em>. In <strong>one</strong> step, <strong>two</strong> key events are taking place - one mechanical and one biochemical. The mechanical powerstroke and biochemical release of P<sub>i</sub> are collapsed into this single step without an explicit declaration of the timing or sequence relative to one other. <strong>Both these events are triggered by actin binding, but does the powerstroke precede P<sub>i</sub>-release or does P<sub>i</sub>-release “gate” the powerstroke?</strong>. This <em>is</em> <strong>the dilemma</strong>. Interestingly, the Powerstroke First and P<sub>i</sub>-Release First models are <em>both</em> well supported in the literature. The divergence from a common mechanochemical scheme has divided the field for several decades and has ultimately limited the progress of fully understanding how myosin is able to transduce chemical energy into mechanical work as the powerstroke and P<sub>i</sub>-release steps are key events in the transduction process. Ultimately, not understanding the precise order of the biochemical and mechanical events during the cross-bridge cycle prevents progress into the mechanisms underlying the molecular nature of energy conservation (1st law of thermodynamics) and limits our ability to develop pharmacological interventions to restore function to diseased, mutated, or compromised motors (HCM, DCM, fatigue, etc.). Moreover, in the emerging field of nanotechnology where researchers have been increasingly more interested in controlling biological motors understanding the precise ordering of steps in the transduction is paramount to the success of the field. For example, if you wanted to control myosin by preventing the powerstroke from occurring (and assuming a P<sub>i</sub>-gating model of the cross-bridge) force production could be halted by trapping P<sub>i</sub> in the active site. However, this approach would not work in a Powerstroke First model.</p>
+<div class="figure">
+<img src="img/xb-q.jpg" alt="" />
+<p class="caption">A typical model of the cross-bridge cycle. The powerstroke and release of P<sub>i</sub> are often represented as ocurring within the same step.</p>
+</div>
 </div>
 <div id="q-how-can-the-dilemma-be-resolved-a-by-rigorously-testing-the-current-unifying-theory-set-forth-by-structural-biologists" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> Q: How can the dilemma be resolved? A: By rigorously testing the current “unifying” theory set forth by structural biologists</h2>
@@ -225,12 +256,11 @@ Our lab primarily uses MV for analyzing single molecule data <span class="citati
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="prerequisites.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="literature-review.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -271,7 +301,7 @@ gitbook.start({
 },
 "download": ["_main.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

@@ -1,3 +1,14 @@
+fig:unnamed-chunk-2
+fig:unnamed-chunk-3
+fig:unnamed-chunk-4
+fig:unnamed-chunk-5
+fig:unnamed-chunk-8
+fig:unnamed-chunk-9
+fig:unnamed-chunk-14
+fig:unnamed-chunk-22
+fig:unnamed-chunk-23
+fig:unnamed-chunk-24
+fig:unnamed-chunk-25
 introduction
 historical-significance-of-the-cross-bridge-to-muscle-physiology-and-kinesiology
 the-modern-cross-bridge-cycle
@@ -36,3 +47,11 @@ skeletal-muscle-myosin-ii-isolation
 actin-isolation-and-labeling
 laser-trap-assay
 ultra-fast-force-clamp
+step-by-step-single-molecule-event-identification
+raw-data
+processed-data
+running-mean-variance
+hidden-markov-model-1
+measure-events
+direction-correction
+changepoint-analysis

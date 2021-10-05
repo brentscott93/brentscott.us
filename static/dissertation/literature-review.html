@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Literature Review | _main.knit</title>
   <meta name="description" content="" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Literature Review | _main.knit" />
   <meta property="og:type" content="book" />
@@ -31,8 +31,9 @@
   
 <link rel="prev" href="introduction.html"/>
 <link rel="next" href="methods.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,9 +49,17 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plugins.Unzoom-1.0/unzoom.js"></script>
 
 
 
@@ -92,6 +101,14 @@ div.csl-indent {
 <li><a href="index.html#what-is-the-relative-timing-between-myosins-powerstroke-and-pi-release">What is the relative timing between myosin’s powerstroke and P<sub>i</sub>-release?</a>
 <ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Dissertation of Brent Scott</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html"><i class="fa fa-check"></i>Prerequisites</a>
+<ul>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#muscle-structure"><i class="fa fa-check"></i>Muscle Structure</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#myosincross-bridge-cycle"><i class="fa fa-check"></i>Myosin/Cross-bridge cycle</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#unconventional-myosins"><i class="fa fa-check"></i>Unconventional myosins</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#the-laser-trap"><i class="fa fa-check"></i>The Laser trap</a></li>
+<li class="chapter" data-level="" data-path="prerequisites.html"><a href="prerequisites.html#laser-trap-data-is-a-time-series"><i class="fa fa-check"></i>Laser trap data is a time series</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
@@ -148,6 +165,16 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#laser-trap-assay"><i class="fa fa-check"></i><b>3.2</b> Laser trap assay</a></li>
 <li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#ultra-fast-force-clamp"><i class="fa fa-check"></i><b>3.3</b> Ultra-fast force clamp</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#step-by-step-single-molecule-event-identification"><i class="fa fa-check"></i><b>3.4</b> Step-by-step single molecule event identification</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="methods.html"><a href="methods.html#raw-data"><i class="fa fa-check"></i><b>3.4.1</b> Raw data</a></li>
+<li class="chapter" data-level="3.4.2" data-path="methods.html"><a href="methods.html#processed-data"><i class="fa fa-check"></i><b>3.4.2</b> Processed Data</a></li>
+<li class="chapter" data-level="3.4.3" data-path="methods.html"><a href="methods.html#running-mean-variance"><i class="fa fa-check"></i><b>3.4.3</b> Running Mean &amp; Variance</a></li>
+<li class="chapter" data-level="3.4.4" data-path="methods.html"><a href="methods.html#hidden-markov-model-1"><i class="fa fa-check"></i><b>3.4.4</b> Hidden-Markov Model</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methods.html"><a href="methods.html#measure-events"><i class="fa fa-check"></i><b>3.4.5</b> Measure Events</a></li>
+<li class="chapter" data-level="3.4.6" data-path="methods.html"><a href="methods.html#direction-correction"><i class="fa fa-check"></i><b>3.4.6</b> Direction Correction</a></li>
+<li class="chapter" data-level="3.4.7" data-path="methods.html"><a href="methods.html#changepoint-analysis"><i class="fa fa-check"></i><b>3.4.7</b> Changepoint Analysis</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
 </ul>
@@ -169,7 +196,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="literature-review" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Literature Review</h1>
-<p>This review is aimed to be a comprehensive examination of the literature with a scope highly focused on the aspects most fundamental to the main question addressed by this dissertation (what is the relative timing of the powerstroke and P~i-release from myosin?). The review will begin by briefly covering myosin structure and move specifically into how P~i is released from the active site and how lever arm rotation occurs before discussing the evidence in-support of both the Powerstoke First and P~i-Release First models. Additionally, methodological limitations will be addressed here as this may/may not confound the conclusions drawn from a report. Lastly, an evaluation of common analysis techniques of single myosin molecule laser trap will be given including an emphasis on the lack-of availability of user friendly software.</p>
+<p>This review is aimed to be a comprehensive examination of the literature with a scope highly focused on the aspects most fundamental to the main question addressed by this dissertation (what is the relative timing of the powerstroke and P<sub>i</sub>-release from myosin?). The review will begin by briefly covering myosin structure and move specifically into how P<sub>i</sub> is released from the active site and how lever arm rotation occurs before discussing the evidence in-support of both the Powerstoke First and P<sub>i</sub>-Release First models. Additionally, methodological limitations will be addressed here as this may/may not confound the conclusions drawn from a report. Lastly, an evaluation of common analysis techniques of single myosin molecule laser trap will be given including an emphasis on the lack-of availability of user friendly software.</p>
 <div id="myosin-structure" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Myosin Structure</h2>
 <p>Myosin is a motor protein that accomplishes a wide variety of cellular tasks that includes both muscle contraction (myosin II) and intracellular cargo transport (myosin V). In fact, the myosin (super) family is quite large and has &gt;100 different myosin isoforms <span class="citation">(Hodge, Jamie, and Cope 2000)</span> that have traditionally been classified into &gt;30 different structural classes. However, more recently there has been an effort to more quantitatively classify myosins into four groups based on mechanic and kinetic parameters. This grouping schema classifies a myosin as either a 1) fast mover, 2) slow/efficient force holder, 3) strain sensor, and 4) gate <span class="citation">(Bloemink and Geeves 2011)</span>. Despite a large diversity of job that each myosin performs, they all are mechanochemical enzymes with conserved structures which allows them to transduce the chemical energy of ATP into a mechanical force imposed onto an actin filament. The conserved structures in the myosin motor domain contains 3 distinct sites which interact together allowing the enzymatic (biochemical) and mechanical function of the whole protein to occur. The sites are the 1) active site, 2) the actin binding surface, and 3) the lever arm <span class="citation">(Robert-Paganin et al. 2020)</span>. Structural changes that occur at both the actin binding surface and in the active site ultimately are communicated throughout the entire protein which effects the position of the lever arm.</p>
@@ -179,12 +206,14 @@ div.csl-indent {
 </div>
 <div id="how-does-pi-leave-the-active-site" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> How does P<sub>i</sub> leave the active site?</h3>
-<p>When binding to myosin, an ATP molecule enters the active site “γ-phosphate first.” The implications of this is that when ATP is hydrolyzed to ADP + P~i , the ADP molecule blocks the P<sub>i</sub> exit pathway the way that ATP entered. Counterintuitively, P<sub>i</sub>-release occurs first prior to the release of ADP in myosin’s cross-bridge cycle <span class="citation">(Geeves, Goody, and Gutfreund 1984)</span>. But, how does P<sub>i</sub> leave the active site if ADP is blocking the exit? There are three proposed pathways that lead into myosin’s active site and they are nicknamed the “front door,” “back door,” and “side door.”
+<p>When binding to myosin, an ATP molecule enters the active site “γ-phosphate first.” The implications of this is that when ATP is hydrolyzed to ADP + P<sub>i</sub> , the ADP molecule blocks the P<sub>i</sub> exit pathway the way that ATP entered. Counterintuitively, P<sub>i</sub>-release occurs first prior to the release of ADP in myosin’s cross-bridge cycle <span class="citation">(Geeves, Goody, and Gutfreund 1984)</span>. But, how does P<sub>i</sub> leave the active site if ADP is blocking the exit? There are three proposed pathways that lead into myosin’s active site and they are nicknamed the “front door,” “back door,” and “side door.”
 The position of ATP in the active site was first observed when myosin’s crystal structure was first resolved <span class="citation">(Rayment et al. 1993)</span>. At this time solution kinetic studies had established the timing of some of the biochemical steps and was clear that the P<sub>i</sub>-release step occurred before the release of ADP. With the observation of ATP in the active site “γ-phosphate first” it became clear that P<sub>i</sub> could not leave the same way it originally entered (via the “front door”) due to steric blocking by ADP. With this data the hypothesis was made that myosin could be a “back door” enzyme in which P<sub>i</sub> could escape through the 50-kDa cleft <span class="citation">(Gilson et al. 1994; Rayment et al. 1993; Yount, Lawson, and Rayment 1995)</span>. Additionally, over time other hypotheses arose most prominently with the idea of P<sub>i</sub> leaving through a “side door” which forms from an opening in between SWII and the P-loop from the active site.
 To date, the most probable P<sub>i</sub>-release pathway is via the “back door” and is thoroughly detailed by <span class="citation">Llinas et al. (2015)</span>. Using x-ray crystallography, myosin-VI, varying levels of [P<sub>i</sub>] concentrations, and numerous active site point mutations they characterized a so-called “P<sub>i</sub>-release tunnel” in between the cleft of the two 50-kDa domains that lead from the active site into solution. In short, the mechanism of P<sub>i</sub>-release involves actin binding triggering conformational changes in the active site. SWII opens the entrance to the P<sub>i</sub>-release tunnel in which the P<sub>i</sub> can dissociate from the active site into solution. Additionally, they were able to couple their structural observations with kinetic solutions studies to show the higher probability of the “back door” mechanism versus the alternate “side door” hypothesis.</p>
-<div class="figure">
-<img src="img/llinas-2015_fig4.png" alt="" />
-<p class="caption">The so-called “P<sub>i</sub>-release tunnel” detailed by X-Ray Crystallography from Llinas et al. 2015.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="img/pi-release-figs/pi-release.gif" alt="The so-called 'P~i~-release tunnel' detailed by X-Ray Crystallography from Llinas et al. 2015."  />
+<p class="caption">
+Figure 2.1: The so-called ‘P<sub>i</sub>-release tunnel’ detailed by X-Ray Crystallography from Llinas et al. 2015.
+</p>
 </div>
 </div>
 <div id="how-does-the-powerstroke-occur" class="section level3" number="2.1.2">
@@ -243,7 +272,7 @@ Most importantly the S217A mutation provides the perfect test of the “unifying
 <div id="analysis-of-single-molecule-trap-data" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> Analysis of single molecule trap data</h2>
 <blockquote>
-<p>“…the interpretation of data from such experiments [the laser trap] is not straightforward” - Guilford et al. 1997</p>
+<p>“…the interpretation of data from such experiments <a href="prerequisites.html#the-laser-trap">the laser trap</a> is not straightforward” - Guilford et al. 1997</p>
 </blockquote>
 <p>The laser trap (or optical tweezers) has been revolutionary to the myosin world. Originally developed by Arthur Ashkin of Bell Laboratories <span class="citation">(Ashkin et al. 1986)</span> the laser trap was adopted by biologists to study the interactions of a single molecule of myosin with a single actin filament. After the first single molecule three-bead assay was performed in 1994 by Finer, Simmons, and Spudich <span class="citation">(Finer, Simmons, and Spudich 1994)</span>, single molecule myosin biophysics began to flourish as other research groups began building their own laser traps to investigate the basic mechanical and kinetic properties of the myosin family. While quick to adopt the method of the three-bead assay, the analysis of single molecule laser trap data seemed to be controversial even since the original <span class="citation">Finer, Simmons, and Spudich (1994)</span> experiment. Most of the major research groups that were trapping with myosin in the 1990s seemed to have their own opinions on how to best extract the necessary information from their raw data records and several analysis methods seemed popular while other were abandoned or seemingly ostracized by the community. Even the original work of <span class="citation">Finer, Simmons, and Spudich (1994)</span> came under scrutiny relatively quickly by the newly found field since they analyzed their data “by eye,” manually selecting where actomyosin interactions occurred in the data. Moreover, even more recently as analysis has moved more hands-off and has become increasingly more automated with computer programs, many fail to cite properly (or even explain) the basic underlying programming languages, software, or libraries used to construct their custom analysis scripts (and there is currently no GUI software that is easily accessible to perform the analysis of laser trap data). This makes reproducible research quite difficult, and not just from the point of wanting to replicate someone else’s experiments, but also since many reviewers of journal manuscripts expect to see laser trap data analyzed just as “someone else” has done. The lack of software is a large gap in the field and ultimately provides a hindrance to the field progressing as a whole. Following is a review, attempted at being chronological as best as possible, of the (mostly early) trapping papers and their techniques used to analysis single molecule myosin data from the three-bead laser trap. The purpose is to review what has and is currently being done to analyze single molecule trapping data in hopes highlight the “best practices” that should be included (or would be desired) in a modern software package.</p>
 <div id="manual-identification" class="section level3" number="2.5.1">
@@ -306,7 +335,7 @@ By performing this analysis additional information can be estimated from trappin
 Ensemble averaging has been used extensively to measure both the size and rate of the second powerstroke, sometimes called “the hitch.” Additionally, since the hitch is often associated with the release of ADP many use the rate of the second powerstroke as a surrogate measure of the ADP release rate that can be estimated from trapping data. The size of the hitch can be estimated from a floating parameter to the exponential fit that estimates the rate, or by subtracting the beginning position of the backwards ensemble from the final displacement from the forward ensemble. Lastly, the second order binding constant of ATP to myosin can be estimated from an exponential fit to the backwards ensemble. As a result, ensemble averaging serves as a powerful post-analysis tool which can provide important kinetic and mechanical insights to the originally collected data set.</p>
 <div class="figure">
 <img src="img/capitantio-2006_fig2.png" alt="" />
-<p class="caption">Ultra-fast optical trap has sub-millisecond time resolution.</p>
+<p class="caption">Ensemble averaging data from Capitanio 2006.</p>
 </div>
 </div>
 </div>
@@ -337,7 +366,6 @@ Currently, only two UFFC experiments have been performed with myosin. The origin
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -378,7 +406,7 @@ gitbook.start({
 },
 "download": ["_main.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
