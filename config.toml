@@ -284,4 +284,4 @@ staticDir = "static"
         icon = "fas fa-drum"
 		
         [[params.drums.list]]		
-		    drums = "Virtual drum lessons through [Naples Park Music](http://naplesparkmusic.com/music-lessons/)"
+		    drums = "Virtual drum lessons through [Naples Park Music](http://naplesparkmusic.rocks)"
