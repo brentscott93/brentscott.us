@@ -115,7 +115,7 @@ staticDir = "static"
             college = "University of Massachusetts Amherst"
             dates = "2019 - *Present*"
             thesis_title = "What is the relative timing between myosin's powerstroke and phosphate release?"
-            thesis_link = "#"
+            thesis_link = "https://brentscott.us/dissertation"
 
         [[params.education.list]]
             degree = "**M.S. in Kinesiology**"
