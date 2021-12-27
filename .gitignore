@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+.httr-oauth
+token.rds
+content/run/.httr-oauth
+content/run/token.rds

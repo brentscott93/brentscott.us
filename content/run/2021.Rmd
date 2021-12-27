@@ -1,0 +1,22 @@
+---
+title: "2021"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bsr)
+token <- readRDS('token.rds')
+data <- get_strava_data(token)
+```
+
+
+```{r, echo=FALSE, fig.height=9, fig.width=9, message=FALSE, warning=FALSE}
+gg_run_cal(data, 2021, TRUE)
+```
+
+
+
+
+

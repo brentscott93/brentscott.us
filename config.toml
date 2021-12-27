@@ -29,10 +29,10 @@ staticDir = "static"
 
     # Profile section
     [params.profile]
-        name = "Brent Scott, MS, CSCS"
+    name = "Brent Scott, MS, CSCS"
 		tagline = "Graduate Student"
 		location = "UMass Amherst"
-        photo = "profile_brent.jpg"
+    photo = "profile_brent.jpg"
 
     # Section for links to social websites
     [params.social]
