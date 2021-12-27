@@ -103,7 +103,7 @@ staticDir = "static"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**I'm Brent.** Currently, I am a graduate student at the University of Massachusetts Amherst studying molecular physiology and biophysics within the Kinesiology department. I am a member of the [Muscle Biophysics Lab](https://www.umass.edu/musclebiophy/) and use *in vitro* techniques to explore force generation in molecular motors." 
+        description = "**I'm Brent.** Currently, I am a graduate student at the University of Massachusetts Amherst studying molecular physiology and biophysics within the Kinesiology department. I am a member of the [Muscle Biophysics Lab](https://www.umass.edu/musclebiophy/) and use *in vitro* techniques to explore force generation in molecular motors. [My CV is here.](https://brentscott.us/cv.pdf)" 
 
     # Education section
     [params.education]
