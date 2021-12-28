@@ -17,6 +17,3 @@ gg_run_cal(data, 2021, TRUE)
 ```
 
 
-
-
-
