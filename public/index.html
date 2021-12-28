@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title>brentscott.us</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Personal website for Brent Scott" />
+<meta name="author" content="Brent Scott" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.88.1" />
+
+       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+       <link rel="manifest" href="/site.webmanifest">
+
+        
+
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu_dark.css" />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = () => {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="container">
+    <main style="min-height: calc(100vh - 60px);">
+      
+      <div class="d-flex flex-row row p-2">
+  <h3 class="main-menu mr-3">
+    <a href="https://brentscott.us">Home</a>
+  </h3>
+  <h3 class="main-menu mr-3">
+    <a href="/lab">Lab</a>
+  </h3>
+   <h3 class="main-menu mr-3">
+    <a href="/run">Run</a>
+  </h3>
+</div>
+
+      
+<div class="ml-auto mr-auto row row-eq-height rounded">
+  <div class="col-md-5 text-center p-2 mt-1">
+    <div class="profile-area rounded text-center position-relative shadow">
+      <div class="d-flex justify-content-center pt-2">
+  <div class="w-100 h-100">
+    <img
+      class="rounded rounded-circle mt-4"
+      src="/images/profile_brent.jpg"
+      alt="Brent Scott"
+      style="width: 95%; max-width: 300px;"
+    />
+  </div>
+</div>
+
+      <div class="p-2">
+        <h1 class="mb-0">Brent Scott, MS, CSCS</h1>
+<h2 class="mb-0">Graduate Student</h2>
+<h3 class="mb-0">UMass Amherst</h3>
+<div class="mt-2 d-flex flex-wrap justify-content-center">
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=v_4YkmYAAAAJ&amp;view_op=list_works&amp;gmla=AJsN-F588qLiiHEzJJZucY6rIHVxxSNzkWmGYy-IhAN5k2z3H5MibxUAkczE1LAULACKyXMX2sEK9pS3TqvBTrSEpHO9Pkjt4e7Y_-i_s10GHrA6z9NW0ic">
+      <i class="zoomlink mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://github.com/brentscott93">
+      <i class="zoomlink mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://stackoverflow.com/users/11437205/bs93?tab=profile">
+      <i class="zoomlink mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://www.strava.com/athletes/50701336">
+      <i class="zoomlink mt-1 fab fa-strava"></i>
+    </a>
+  </div>
+  
+</div>
+ <footer class=" mt-2 mb-2 ">
+  <span class="markdownify"></span>
+  <span style="font-size:0px;">
+    &middot;
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </span>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 pt-2 mt-3">
+    
+    <h2 class="accordion  active ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-user"></i>
+        About Me</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+  <strong>I&rsquo;m Brent.</strong> Currently, I am a graduate student at the University of Massachusetts Amherst studying molecular physiology and biophysics within the Kinesiology department. I am a member of the <a href="https://www.umass.edu/musclebiophy/">Muscle Biophysics Lab</a> and use <em>in vitro</em> techniques to explore force generation in molecular motors. <a href="https://brentscott.us/cv.pdf">My CV is here.</a>
+</p>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-microscope"></i>
+        Research</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt class="mb-0">
+    <strong>Graduate Research Assistant</strong>
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">2016 - <em>Present</em></span>
+    &middot;
+    
+    Muscle Biophysics Lab (UMass Amherst)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">My current research is in the field of single molecule biophysics. More specifically, some of my interests include investigating the molecular mechanisms underlying the regulation of force generation and energy transduction in skeletal muscle myosin II and its associated regulatory proteins, troponin and tropomyosin.</dd>
+</dl>
+
+<dl>
+  <dt class="mb-0">
+    <strong>Undergraduate Research Assistant</strong>
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">2015 - 2016</span>
+    &middot;
+    
+    Neuromuscular Physiology Lab (Vanderbilt University Medical Center)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify"></dd>
+</dl>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-book"></i>
+        Teaching</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt class="mb-0">
+    <strong>Courses Taught</strong>
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">UMass Amherst</span>
+    &middot;
+    
+    KIN 110 (Human Performance &amp; Nutrition); KIN 470 (Exercise Physiology)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify"></dd>
+</dl>
+
+<dl>
+  <dt class="mb-0">
+    <strong>Graduate Teaching Assistant</strong>
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">UMass Amherst</span>
+    &middot;
+    
+    KIN 100 (Introduction to Kinesiology); KIN 110; KIN 394 (Applied Exercise Testing)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify"></dd>
+</dl>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-graduation-cap"></i>
+        Education</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt><strong>Pursuing Ph.D. in Kinesiology <em>(ETA Spring 2022)</em></strong></dt>
+  <dd class="mb-0 ml-3">2019 - <em>Present</em> &middot; University of Massachusetts Amherst</dd>
+  
+  <dd class="mb-0 ml-4">
+    Thesis:
+    <a href="https://brentscott.us/dissertation"
+      ><i>What is the relative timing between myosin&#39;s powerstroke and phosphate release?</i></a
+    >
+  </dd>
+  
+</dl>
+
+<dl>
+  <dt><strong>M.S. in Kinesiology</strong></dt>
+  <dd class="mb-0 ml-3">2016 - 2019 &middot; University of Massachusetts Amherst</dd>
+  
+  <dd class="mb-0 ml-4">
+    Thesis:
+    <a href="https://scholarworks.umass.edu/masters_theses_2/795/"
+      ><i>Tropomyosin-Based Effects of Acidosis on Thin-Filament Regulation During Muscle Fatigue</i></a
+    >
+  </dd>
+  
+</dl>
+
+<dl>
+  <dt><strong>B.S. in Exercise Science</strong></dt>
+  <dd class="mb-0 ml-3">2012 - 2016 &middot; Belmont University</dd>
+  
+</dl>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-newspaper"></i>
+        Publications</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p>2021.
+Scott B, Marang C, Woodward M, &amp; Debold EP.
+
+
+<a href="publications/scott-marang-2021-cytoskeleton.pdf">
+  <em>Myosin&#39;s powerstroke occurs prior to the release of phosphate from the active site.</em>
+</a>
+
+
+Cytoskeleton. https://doi.org/10.1002/cm.21682.
+</p>
+<p>2020.
+Gunther LK, Rohde JA, Tang W, Cirilo JA Jr, Marang CP, Scott BD, Thomas DD, Debold EP, Yengo CM.
+
+
+<a href="publications/gunther-2020-jbc.pdf">
+  <em>FRET and optical trapping reveal mechanisms of actin-activation of the power stroke and phosphate-release in myosin V.</em>
+</a>
+
+
+J Biol Chem. doi: 10.1074/jbc.RA120.015632.
+</p>
+<p>2020.
+Mike Woodward, Eric Ostrander, Seung P. Jeong, Xiarong Liu, Brent Scott, Matt Unger, Jianhan Chen, Dhandapani Venkataraman, Edward P. Debold.
+
+
+<a href="https://brentscott.us/publications/woodward-2020-skeletal-azo.pdf">
+  <em> Positional Isomers of a Non-Nucleoside Substrate Differentially Affect Myosin Function. .</em>
+</a>
+
+
+Biophysical Journal 119(3), 567-580.
+</p>
+
+
+<h4 style="text-decoration: underline;">Proceedings</h4><p>2021.
+Mike K Woodward, Eric Ostrander, Brent D Scott, Christopher Marang, Xiaorong Liu, Jianhan Chen, Dhandapani Venkataraman, Edward P Debold.
+
+
+<a href="https://www.cell.com/biophysj/pdf/S0006-3495%2820%2932529-7.pdf">
+  <em>Enhancing Cardiac Myosin Function with an Abiotic Energy Source.</em>
+</a>
+
+
+Biophysical Journal 120 (3), 249a.
+</p>
+<p>2021.
+Christopher P Marang, Brent D Scott, Mike K Woodward, Edward P Debold.
+
+
+<a href="https://www.cell.com/biophysj/pdf/S0006-3495%2820%2931505-8.pdf">
+  <em>Tirasemtiv and dATP Synergistically Reverse the Acidosis-induced Depression of Myosin’s Force and Motion Generating Capacity.</em>
+</a>
+
+
+Biophysical Journal 120 (3), 60a0.
+</p>
+<p>2016.
+Coolbaugh C., Bush E., Sabin S., Scott B., Damon B., &amp; Towse T.
+
+
+<a href="https://www.fasebj.org/doi/abs/10.1096/fasebj.30.1_supplement.761.10">
+  <em> Rapid Onset Vasodilation in the Leg is Greater in Habitual Endurance Runners.</em>
+</a>
+
+
+The FASEB Journal, 30(1 Supplement), 761.10-761.10.
+</p>
+
+
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-project-diagram"></i>
+        Projects</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <dl>
+  
+  <dt>
+    <a href="https://lasertrapr.app" style="font-variant: small-caps; ">lasertrapr</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Automated analysis of laser trap data using <em>R Shiny</em></dd>
+  
+</dl>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-cogs"></i>
+        Skills</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+      id="skill-panel"
+      
+    >
+      <script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>Laser Trapping</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="90%" style="width: 0;"></div>
+</div>
+
+<code>Data Analysis (R programming)</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="95%" style="width: 0;"></div>
+</div>
+
+<code>In Vitro Motility</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="85%" style="width: 0;"></div>
+</div>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-gamepad"></i>
+        Hobbies</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Spending time with my wife and our kiddos</li>
+  
+  <li class="list-unstyled mb-2">Running, biking, kayaking (really anything outdoorsy!)</li>
+  
+  <li class="list-unstyled mb-2"></li>
+  
+</ul>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-drum"></i>
+        Alter-ego</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Virtual drum lessons through <a href="http://naplesparkmusic.rocks">Naples Park Music</a></li>
+  
+</ul>
+
+    </div>
+    
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+    </main>
+    
+  </body>
+</html>
