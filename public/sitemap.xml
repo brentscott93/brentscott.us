@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/blog/</loc>
+    <loc>https://brentscott.us/run/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://brentscott.us/blog/</loc>
+  </url><url>
+    <loc>https://brentscott.us/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://brentscott.us/run/2021/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://brentscott.us/categories/</loc>
+  </url><url>
+    <loc>https://brentscott.us/tags/</loc>
   </url>
-  
-  <url>
-    <loc>/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-  </url>
-  
 </urlset>
