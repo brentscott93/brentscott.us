@@ -6,13 +6,31 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://brentscott.us/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://brentscott.us/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022</title>
+      <link>https://brentscott.us/run/2022/log/</link>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://brentscott.us/run/2022/log/</guid>
+      <description>  </description>
+    </item>
+    
+    <item>
+      <title>2021</title>
+      <link>https://brentscott.us/run/2021/log/</link>
+      <pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://brentscott.us/run/2021/log/</guid>
+      <description>  </description>
+    </item>
+    
     <item>
       <title>2020</title>
-      <link>https://brentscott.us/run/2020/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <link>https://brentscott.us/run/2020/log/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://brentscott.us/run/2020/</guid>
+      <guid>https://brentscott.us/run/2020/log/</guid>
       <description>  </description>
     </item>
     

@@ -1,6 +1,6 @@
 ---
 title: "2021"
-date: "`r Sys.Date()`"
+date: "2021-12-31"
 output: html_document
 ---
 
@@ -13,7 +13,7 @@ data <- get_strava_data(token)
 
 
 ```{r, echo=FALSE, fig.height=9, fig.width=9, message=FALSE, warning=FALSE}
-gg_run_cal(data, 2021, TRUE)
+gg_run_cal(data, 2021, FALSE)
 ```
 
 
