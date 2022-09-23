@@ -44,7 +44,7 @@ staticDir = "static"
             #url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
             #title = "StackOverflow"
         [[params.social.list]]
-            class = "ai"
+            class = "fa"
             icon = "fa-envelope"
             url = "mailto:brents@wustl.edu"
             title = "Email"
