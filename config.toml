@@ -30,8 +30,8 @@ staticDir = "static"
     # Profile section
     [params.profile]
     name = "Brent Scott, PhD, CSCS"
-		tagline = "Postdoctoral Research Associate"
-		location = "WashU"
+		tagline = "Research Associate"
+		location = "WashU in St. Louis"
     photo = "profile_brent.jpg"
 
     # Section for links to social websites
@@ -43,11 +43,11 @@ staticDir = "static"
            # icon = "fa-stack-overflow"
             #url = "https://stackoverflow.com/users/11437205/bs93?tab=profile"
             #title = "StackOverflow"
-       # [[params.social.list]]
-        #    class = "ai"
-         #   icon = "fa-envelope"
-          #  url = "bdscott@umass.edu"
-           # title = "Email"
+        [[params.social.list]]
+            class = "ai"
+            icon = "fa-envelope"
+            url = "mailto:brents@wustl.edu"
+            title = "Email"
         [[params.social.list]]
             class = "ai"
             icon = "ai-google-scholar" 
@@ -103,7 +103,7 @@ staticDir = "static"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**I'm Brent.** Currently, I am a post-doc at Washington University in St. Louis in the department of Biochemistry & Molecular Biophysics studying studying in the [Greenberg lab.](https://glab.biochem.wustl.edu/) I use *in vitro* techniques to explore force generation in molecular motors and to characterize the molecular/biophsyical properties of cardiac muscle disfunction underlying heart disease. [My CV is here.](https://brentscott.us/cv.pdf)" 
+        description = "**I'm Brent.** Currently, I am a post-doc at Washington University in St. Louis in the department of Biochemistry & Molecular Biophysics studying in the [Greenberg Lab.](https://glab.biochem.wustl.edu/) I use *in vitro* techniques to explore force generation in molecular motors and to characterize the molecular/biophsyical properties of cardiac muscle disfunction underlying heart disease. [My CV is here.](https://brentscott.us/cv.pdf)" 
 
     # Education section
     [params.education]
