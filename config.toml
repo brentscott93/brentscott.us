@@ -9,7 +9,7 @@ staticDir = "static"
     author = "Brent Scott"
     description = "Personal website for Brent Scott"
     copyright = ""
-    footer = "&copy; [Brent Scott](https://brentscott.us) 2020"
+    footer = "&copy; [Brent Scott](https://brentscott.us) 2022"
 
     [params.theme]
         # Available themes are 'light', 'dark', and 'pinkish'
@@ -29,9 +29,9 @@ staticDir = "static"
 
     # Profile section
     [params.profile]
-    name = "Brent Scott, MS, CSCS"
-		tagline = "Graduate Student"
-		location = "UMass Amherst"
+    name = "Brent Scott, PhD, CSCS"
+		tagline = "Postdoctoral Research Associate"
+		location = "WashU"
     photo = "profile_brent.jpg"
 
     # Section for links to social websites
@@ -103,17 +103,22 @@ staticDir = "static"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**I'm Brent.** Currently, I am a graduate student at the University of Massachusetts Amherst studying molecular physiology and biophysics within the Kinesiology department. I am a member of the [Muscle Biophysics Lab](https://www.umass.edu/musclebiophy/) and use *in vitro* techniques to explore force generation in molecular motors. [My CV is here.](https://brentscott.us/cv.pdf)" 
+        description = "**I'm Brent.** Currently, I am a post-doc at Washington University in St. Louis in the department of Biochemistry & Molecular Biophysics studying studying in the [Greenberg lab.](https://glab.biochem.wustl.edu/) I use *in vitro* techniques to explore force generation in molecular motors and to characterize the molecular/biophsyical properties of cardiac muscle disfunction underlying heart disease. [My CV is here.](https://brentscott.us/cv.pdf)" 
 
     # Education section
     [params.education]
         title = "Education"
         icon = "fas fa-graduation-cap"
+        
+        [[params.education.list]]
+            degree = "**Postdoctoral Research Associate**"
+            college = "Washington Unversity in St. Louis"
+            dates = "2022 - *Present*"
 
         [[params.education.list]]
-            degree = "**Pursuing Ph.D. in Kinesiology *(ETA Spring 2022)***"
+            degree = "**Ph.D. in Kinesiology**"
             college = "University of Massachusetts Amherst"
-            dates = "2019 - *Present*"
+            dates = "2019 - 2022"
             thesis_title = "What is the relative timing between myosin's powerstroke and phosphate release?"
             thesis_link = "https://brentscott.us/dissertation"
 
@@ -135,10 +140,17 @@ staticDir = "static"
         icon = "fas fa-microscope"
 
         [[params.research.list]]
+            position = "**Postdoctoral Research Associate"
+            dates = "2022 - *Present*"
+            company = "Biochemistry & Mocular Biophysics (WashU)"
+            details = "My current research interests involve characterizing the molecular determinents of genetic cardiomyopathies and related heart diseases. I also feel strongly about using/contributing to open source and reproducible science, software, and communities."
+
+
+        [[params.research.list]]
             position = "**Graduate Research Assistant**"
-            dates = "2016 - *Present*"
+            dates = "2016 - 2022"
             company = "Muscle Biophysics Lab (UMass Amherst)"
-            details = "My current research is in the field of single molecule biophysics. More specifically, some of my interests include investigating the molecular mechanisms underlying the regulation of force generation and energy transduction in skeletal muscle myosin II and its associated regulatory proteins, troponin and tropomyosin."
+            details = "My research focus in grad school was in the field of single molecule biophysics. More specifically, my interests included investigating the molecular mechanisms underlying the regulation of force generation and energy transduction in skeletal muscle myosin II and its associated regulatory proteins, troponin and tropomyosin."
 
         [[params.research.list]]
             position = "**Undergraduate Research Assistant**"
