@@ -140,7 +140,7 @@ staticDir = "static"
         icon = "fas fa-microscope"
 
         [[params.research.list]]
-            position = "**Postdoctoral Research Associate"
+            position = "**Postdoctoral Research Associate**"
             dates = "2022 - *Present*"
             company = "Biochemistry & Mocular Biophysics (WashU)"
             details = "My current research interests involve characterizing the molecular determinents of genetic cardiomyopathies and related heart diseases. I also feel strongly about using/contributing to open source and reproducible science, software, and communities."
