@@ -103,7 +103,7 @@ staticDir = "static"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**I'm Brent.** Currently, I am a post-doc at Washington University in St. Louis in the department of Biochemistry & Molecular Biophysics studying in the [Greenberg Lab.](https://glab.biochem.wustl.edu/) I use *in vitro* techniques to explore force generation in molecular motors and to characterize the molecular/biophsyical properties of cardiac muscle disfunction underlying heart disease. [My CV is here.](https://brentscott.us/cv.pdf)" 
+        description = "**I'm Brent.** Currently, I am a post-doc at Washington University in St. Louis in the department of Biochemistry & Molecular Biophysics studying in the [Greenberg Lab.](https://glab.biochem.wustl.edu/) I use *in vitro* techniques to explore force generation in molecular motors and to characterize the molecular/biophsyical properties of cardiac muscle dysfunction underlying heart disease. [My CV is here.](https://brentscott.us/cv.pdf)" 
 
     # Education section
     [params.education]
