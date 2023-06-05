@@ -1,0 +1,47 @@
+# Analyzers
+
+Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similar UI with the ability to impose user control over some of the analysis parameters. 
+
+For both analyzers you have the option to run the analyzer through all of the observations in a given date folder, or you can select just a single observation. If you select to analyze a single observation you must also select the observation you want to analyze in the Folder Navigator (top right button). 
+
+## HM-Model/Changepoint
+
+Intended for single molecule data, this analyzer uses a combination approach to identify single molecule binding events. A Hidden Markov Model is implemented with the [{depmixS4}](https://cran.r-project.org/web/packages/depmixS4/vignettes/depmixS4.pdf) R-package on a running window transformation of the data to estimate locations of binding events. Then a changepoint analysis is applied to a small subset of the original trapping data around the HM-Model estimated transition periods with the [{changepoint}](https://www.jstatsoft.org/article/view/v058i03) R-package to precisely choose the most probable data point (at the original sampling frequency) where the binding event occurred.
+
+Within the HM-Model/Changepoint analyzer, users have control (to some extent) over most aspects of the analyzer including the running window transformations, some of the HM-Model, and the type of changepoint. 
+
+Clicking the "Options" button will open up a menu that will allow you to set the analysis option. 
+
+### Options: HM-Model
+
+The Hidden Markov Model analyzes a running window transformation of the original data trace. Here you can select the window width (in data points) and how you would like the window to progress. Users are referenced to [Smith, Steffon, Simmons, and Sleep 2001](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1301746/pdf/11606292.pdf) for further details on how to optimize the windows. Per their recommendations the default of the progression of the windows is by 1/2 overlap. **Note: not all window slide options have been tested. Possible bugs may exist and app crash potential**. You can just restart the app and try another option. 
+
+The "Channels" options lets you choose if you want the Hidden Markov Model to use both the running mean AND running variance transformations or just the running variance. A personal anecdotal recommendation is to use both the running mean and variance. 
+
+"EM Random Start" is `FALSE` (unchecked) by default. If `TRUE` (checked) the analyzer will use random number generation to start the EM-Algorithm. 
+
+### Options: Changepoint
+
+There are two sections the changepoint options. Since changepoint analysis is applied separately to the beginning and ends of the events so you can control the behavior of both. The default is to use the changepoint method "Mean/Var" which has the changepoint alogorithm use the mean and variance position to identify the most probable change. Whereas if "Variance" is selected a slider will appear allowing the user to select a window width for the running variance transformation. The changepoint will then look for a change in the mean signal position of the variance transformation to identify the most probable change. 
+
+### Options: Displacements
+
+Users can select one of two methods for peak displacements to be calculated. The "average" method calculates the mean signal position of the entire ID'd event minus the first and last 5ms. Alternatively, users can opt to use the "peak" method which returns a maximum value from a 5ms running mean of the ID'd event. 
+
+#### Options: Hz
+
+Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz.
+
+
+## Mini-Ensemble
+
+This mini-ensemble analyzer uses a simple thresholding method to ID events. Users can control the threshold parameters for the displacement and minimum time on as well as the running window width. 
+
+## tl;dr
+
+Just show me a video...
+
+<video width="800" height="400" controls>
+  <source src="images/analyzer.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>

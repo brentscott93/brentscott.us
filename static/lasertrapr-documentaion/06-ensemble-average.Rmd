@@ -1,0 +1,44 @@
+# Ensemble Average 
+
+Ensemble averaging in **{lasertrapr}** is divided into three distinct steps 1) preparing the ensembles, 2) averaging and fitting the ensembles, and 3) plotting. Separating these distinct tasks provides the user with more control over the prococess without having to re-run computationally long tasks repeatedly.
+
+## Prep Ensembles
+
+An individual single molecule (myosin) event should be composed of two substeps (d1 & d2). Events can be aligned at the changepoint identified start or end of the events, temporally synchronized to the same duration, and then averaged together to create one "average" event. The user can control how the event synchronization occurs. 
+
+All the original trapping data traces are saved in the "trap-data.csv" files and their ID'd events are saved in "measured-events.csv". The "measured-events.csv" file not only includes displacements, event durations, etc., but also the changepoint ID'd datapoint for the start and end of each event. This information can be used for the ensemble averaging. 
+
+Ultimately, the "Prep Ensembles" button will create an "ensemble-data.csv" file in each **obs-##** folder that will have all of the individual forwards and backwards extended events that was constructed with the selected parameters described below in one file in long format. 
+
+This step usaully takes the most time computationally as it involved reading in every single "trap-data.csv" file, extracting the events, and writing the synchronized events back to the folder. 
+
+**NOTE:** Only observations that were **included**, analyzed as **success**, and whose **review** marked as TRUE will be included in the ensemble averages. Additionally, if the observation passes that first check then any events that were user excluded will be filtered out. Each time you re-prep your ensembles, all existing "ensemble-data.csv" files are **ERASED** and the data is re-read and prepped again. This allows the user to go back and exclude a trace or event from analysis and re-prep without leaving old straggling files behind. 
+
+### Extending Forward 
+
+The goal with the forward ensemble average is to align the beginning of the events and "stretch" the ends of the short events to be equal to the longest event in time. The app lets the user choose how much (or little) time to use to extend the event. A 3ms "Avg of ms to extend forward" (I should probably come up with better names for these parameters) value means the position of the last 3ms of an events will be averaged and that resulting average value will be used (repeated) to extend the event out. The window size you select would probably be dependent on [ATP]. The higher the [ATP] the lower the window should be to decrease the likelihood of averaging pre-hitch (d1) displacement position. Whereas, at high [ATP] myosin will spend a longer time in a post-hitch (d2) final displacement position waiting for ATP to induce dissociation so you can be less aggressive in the size of the window in attempts to truly capture the average of that final d2 displacement.    
+
+### Extending Backwards 
+
+Similar idea of the forwards, but for the backward ensemble average the goal is to capture the average position signal of the d1 pre-hitch position signal to extend the events. However, this is a little tricky. The changepoint algorithm used identifies the transition period going from un-bound to bound as a part of the event. This is the very brief period in time where the bead is moving through solution as it is displaced from the center of the trap. As a result, even though these datapoint are considered part of the event, they are not a true representation of the post-powerstroke/pre-hitch d1 position. The app gives the option to "skip" into the event before performing an average in effort to try to avoid averaging in these transition points. The "Number of ms to skip before s1 avg" (again not a catchy name...) lets the user decide how many ms to skip into each event before averaging. Similarly, the "Avg of ms to extend s1 backwards" allows the user to select how many ms to include in the average after skipping ahead. 
+
+## Average & Fit Ensembles
+
+Once the ensembled are prepped they can then be averaged and optionally fit with an exponential curve. The options allow the user to select the maximum amount of data to plot and whether to fit a single, double, or no exponential to the data. This part is relateively strighforward, just click "Avg Ensembles". Averaging the ensmbles will automatically save the fit parameters under "lasertrapr/project/summary". 
+
+## Plot Ensembles
+
+After the ensembles are averaged and optionally fit, you can navigate to the "Plot Options" tab to activate the graph. Prior to activating this tab only the Forward/Backwards Fit Parameter tables will be view-able. 
+
+Within the app, there is a limited selection of plot customizations that allow the user to tweak the appearance of the plot. You can provide custom labels to the facets, change facetting directions, shift the backwards ensembls undernearth the forwards to save on space, change theme size, along with some other minor features. Plots can be saved with "Save Plot" and figures are saved under the selected project folder inside "lasertrapr/project/summary/figures".
+
+**NOTE:** In order to get the custom labels to work you must select a factor order.
+
+## tl;dr
+
+Just show me a video...
+
+<video width="800" height="400" controls>
+  <source src="images/ensemble-average.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>

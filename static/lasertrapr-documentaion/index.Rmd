@@ -1,0 +1,64 @@
+--- 
+title: "Documentation for **{lasertrapr}**"
+author: "Brent Scott"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+biblio-style: apalike
+link-citations: yes
+description: Documentation for using the lasertrapr app
+---
+
+# Getting Started
+  
+**{lasertrapr}** is an R-package/Shiny application built using the [`{golem}`](https://golemverse.org/) framework for automating the analysis of laser trap data. Please note that the app is currently still under development. Users should proceed with caution. 
+ 
+*NOTE: an R-package is denoted by the `{}` braces* 
+
+## Install R & RStudio
+
+Currently, **{lasertrapr}** can only be launched from an active R-session. Before you begin you will need to [download and install R](https://cloud.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/#download). Both of these are free. RStudio is an IDE (integrated development environment) and is not 100% necessary, but is recommended. Follow the instructions on the respective websites to complete installation. 
+
+Additionally, you will need to install the [R build toolchain](https://r-pkgs.org/setup.html#setup-tools). This allows a user to build an R-package from source on their own computer. The link provides directions on how to do this on Windows, Mac, and Linux. 
+
+At the moment there is a lot of overheard needed to get the application up and running. Hopefully, in the future a more stable version can be released onto CRAN (Comprehensive R Archive Network) or preferably as a standalone program. 
+
+## Download **{lasertrapr}**
+
+Open R/RStudio on your computer. You can download the latest stable version of the app from my *drat* repository on Github with the following code. Copy/paste the following into the R-Console or into an R-Script to run:  
+
+
+```{r eval=FALSE}
+install.packages("drat") # installs drat package
+drat::addRepo("brentscott93") # adds my drat repo
+install.packages("lasertrapr") # installs the lasertrapr package
+```
+For users that want the latest developmental version to fork and contribute you can install from GitHub with: 
+```{r eval=FALSE}
+install.packages("devtools") # i.e. "developer tools"
+library(devtools) # loads the package
+install_github("brentscott93/lasertrapr") # downloads lasertraor from github
+```
+
+Both {devtools} and {lasertrapr} will need to install dependencies. Update and install all the packages that they want when prompted. Alternatively you can install {devtools} from within the RStudio IDE by navigating to the "Packages" tab in the lower right box and clicking "Install".
+
+## Launch the App
+
+Once your have successfully installed and built the `{lasertrapr}` package, you are ready for launch:
+
+```{r, eval = FALSE}
+library(lasertrapr) # load the package and its dependencies
+run_app() # this will launch the app GUI in your default web browser
+```
+
+Once the initial setup and installation is completed, the above two lines is the only code that will need to be run each time you want to use the app. You can update to the current developers version anytime by re-running `install.packages("lasertrapr")` or `devtools::install_gitub("brentscott93/lasertrapr")`. 
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'golem', 'drat'
+), 'packages.bib')
+```

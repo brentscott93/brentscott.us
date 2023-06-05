@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Analyers | Documentation for {lasertrapr}</title>
+  <meta name="description" content="Documentation for using the lasertrapr app" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Analyers | Documentation for {lasertrapr}" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Documentation for using the lasertrapr app" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Analyers | Documentation for {lasertrapr}" />
+  
+  <meta name="twitter:description" content="Documentation for using the lasertrapr app" />
+  
+
+<meta name="author" content="Brent Scott" />
+
+
+<meta name="date" content="2021-05-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="clean-and-process.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://lasertrapr.app"> lasertrapr.app </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#install-r-rstudio"><i class="fa fa-check"></i><b>1.1</b> Install R &amp; RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#download-lasertrapr"><i class="fa fa-check"></i><b>1.2</b> Download <code>{lasertrapr}</code></a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#launch-the-app"><i class="fa fa-check"></i><b>1.3</b> Launch the App</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="upload.html"><a href="upload.html"><i class="fa fa-check"></i><b>2</b> Upload Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="upload.html"><a href="upload.html#the-lasertrapr-folder"><i class="fa fa-check"></i><b>2.1</b> The ~/lasertrapr/ folder</a></li>
+<li class="chapter" data-level="2.2" data-path="upload.html"><a href="upload.html#create-folders"><i class="fa fa-check"></i><b>2.2</b> Create Folders</a></li>
+<li class="chapter" data-level="2.3" data-path="upload.html"><a href="upload.html#load-data"><i class="fa fa-check"></i><b>2.3</b> Load Data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="upload.html"><a href="upload.html#simple-upload"><i class="fa fa-check"></i><b>2.3.1</b> Simple Upload</a></li>
+<li class="chapter" data-level="2.3.2" data-path="upload.html"><a href="upload.html#split-observations"><i class="fa fa-check"></i><b>2.3.2</b> Split Observations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="clean-and-process.html"><a href="clean-and-process.html"><i class="fa fa-check"></i><b>3</b> Clean and Process</a></li>
+<li class="chapter" data-level="4" data-path="analyers.html"><a href="analyers.html"><i class="fa fa-check"></i><b>4</b> Analyers</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyers.html"><a href="analyers.html#hm-modelchangepoint"><i class="fa fa-check"></i><b>4.1</b> HM-Model/Changepoint</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyers.html"><a href="analyers.html#options-hm-model"><i class="fa fa-check"></i><b>4.1.1</b> Options: HM-Model</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyers.html"><a href="analyers.html#options-changepoint"><i class="fa fa-check"></i><b>4.1.2</b> Options: Changepoint</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyers.html"><a href="analyers.html#options-displacements"><i class="fa fa-check"></i><b>4.1.3</b> Options: Displacements</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyers.html"><a href="analyers.html#mini-ensemble"><i class="fa fa-check"></i><b>4.2</b> Mini-Ensemble</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Documentation for <code>{lasertrapr}</code></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analyers" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Analyers</h1>
+<p>Currently, there are two analyzers available within the app. The HM-Model/Changepoint analyzer was designed for single molecule trapping data and the mini-ensemble analyzer is self-explanatory. Both analyzers have a similiar UI with the ability to impose user control over some of the analysis parameters.</p>
+<p>For both analyzers you have the option to run the analyzer through all of the observations in a given date folder, or you can select just a single observation. If you select to analyze a single observation you must also select the observation you want to analyze in the Folder Navigator (top right button).</p>
+<div id="hm-modelchangepoint" class="section level2">
+<h2><span class="header-section-number">4.1</span> HM-Model/Changepoint</h2>
+<p>Intended for single molecule data, this analyzer uses a combination approach to identify single molecule binding events. A Hidden Markov Model is implemented with the <a href="https://cran.r-project.org/web/packages/depmixS4/vignettes/depmixS4.pdf">{depmixS4}</a> R-package on a running window transformation of the data to estimate locations of binding events. Then a changepoint analysis is applied to a small subset of the original trapping data around the HM-Model estimated transition periods with the <a href="https://www.jstatsoft.org/article/view/v058i03">{changepoint}</a> R-package to precisely choose the most probable data point (at the original sampling frequency) where the binding event occurred.</p>
+<p>Within the HM-Model/Changepoint analyzer, users have control (to some extent) over most aspects of the analyzer including the running window transformations, some of the HM-Model, and the type of changepoint.</p>
+<p>Clicking the “Options” button will open up a menu that will allow you to set the analysis option.</p>
+<div id="options-hm-model" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Options: HM-Model</h3>
+<p>The Hidden Markov Model analyzes a running window transformation of the original data trace. Here you can select the window width (in data points) and how you would like the window to progress. Users are referenced to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1301746/pdf/11606292.pdf">Smith, Steffon, Simmons, and Sleep 2001</a> for further details on how to optimize the windows. Per their recommendations the default of the progression of the windows is by 1/2 overlap. <strong>Note: not all window slide options have been tested. Possible bugs may exist and app crash potential</strong>. You can just restart the app and try another option.</p>
+<p>The “Channels” options lets you choose if you want the Hidden Markov Model to use both the running mean AND running variance transformations or just the running variance. A personal anecdotal recommendation is to use both the running mean and variance.</p>
+<p>“EM Random Start” is <code>FALSE</code> (unchecked) by default. If <code>TRUE</code> (checked) the analyzer will use random number generation to start the EM-Algorithm.</p>
+</div>
+<div id="options-changepoint" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Options: Changepoint</h3>
+<p>There are two sections the changepoint options. Since changepoint analysis is applied separately to the beginning and ends of the events so you can control the behavior of both. The default is to use the changepoint method “Mean/Var” which has the changepoint alogorithm use the mean and variance position to identify the most probable change. Whereas if “Variance” is selected a slider will appear allowing the user to select a window width for the running variance transformation. The changepoint will then look for a change in the mean signal position of the variance transformation to identify the most probable change.</p>
+</div>
+<div id="options-displacements" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> Options: Displacements</h3>
+<p>Users can select one of two methods for peak displacements to be calculated. The “average” method calculates the mean signal position of the entire ID’d event minus the first and last 5ms. Alternatively, users can opt to use the “peak” method which returns a maximum value from a 5ms running mean of the ID’d event.</p>
+<div id="options-hz" class="section level4">
+<h4><span class="header-section-number">4.1.3.1</span> Options: Hz</h4>
+<p>Users need to specify the sampling frequency (in Hz) for proper conversion between data points and seconds. Defaults to 5000 Hz</p>
+</div>
+</div>
+</div>
+<div id="mini-ensemble" class="section level2">
+<h2><span class="header-section-number">4.2</span> Mini-Ensemble</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="clean-and-process.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
