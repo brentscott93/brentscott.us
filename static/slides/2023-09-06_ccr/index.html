@@ -89,12 +89,12 @@ class: center, middle, inverse, title-slide
 .pull-left[
 ### Mechanics (force)
 - Optical trapping
-- Isometric force clamping
+- Isometric force clamping 
 ]
 .pull-right[
 ### Kinetics (rates)
-- Steady state solution kinetics
-- Stopped flow
+- Steady state solution kinetics 
+- Stopped flow transient kinetics 
 ]
 ---
 ## Biophysical and biochemical approaches used to characterize the cycle
@@ -106,7 +106,7 @@ class: center, middle, inverse, title-slide
 .pull-right[
 ### Kinetics (rates)
 - Steady state solution kinetics
-- Stopped flow
+- Stopped flow transient kinetics
 ]
 &lt;br&gt;
 &lt;br&gt;
@@ -240,11 +240,13 @@ class: middle
 
 ## Converting displacements to forces
 
+- ~0.02 pN/nm
+
 &lt;img src = "images/biorender-trap-stiffness.png" style = "width: 30%; display: block; margin: auto;"&gt;
 
 
 ---
-# `\(\beta\)`-cardiac myosin's force unchanged by thin filament
+# `\(\beta\)`-cardiac myosin's force unchanged by thin-filament
 - `\(Force = \delta * k_{trap}\)`
 
 &lt;img src = "images/trap-data-displacement.jpg" style = "display: block; margin: auto; width: 60%; padding-top: 40px;"&gt;
@@ -296,14 +298,7 @@ class: middle
 ---
 
 ## Thin-filament does not alter `\(\beta\)`-cardiac myosin's mechanical substeps 
-- or associated kinetics
-
-&lt;br&gt;
-
-.pull-left.center[**Unregulated**]
-.pull-right.center[**Regulated**]
-
-&lt;img src = "images/trap-data-ea.jpg" style = "display: block; margin: auto; width: 100%; padding-top: 20px;"&gt;
+&lt;img src = "images/figure-2-screenshot.png" style = "display: block; margin: auto; width: 70%; padding-top: 20px;"&gt;
 
 ---
 # Attachment time prolonged by the thin-filament
@@ -315,39 +310,95 @@ class: middle
 
 ---
 
-&lt;h3 style = "text-align: center;"&gt;Why?&lt;/h3&gt;
+&lt;h1 style = "text-align: center;"&gt;Why?&lt;/h1&gt;
+
+
+.center[&lt;img src = "images/myosin-xb-cycle-high-res.jpg" style = "width: 60%;"&gt;]
+.footnote2[Image from Barrick &amp; Greenberg 2021]
+
+&lt;!-- &lt;img src = "images/s1-model.jpg" style = "width: 80%; display: block; margin: auto;"&gt; --&gt;
 
 ---
-# Stopped Flow Kinetics
+# Stopped flow transient kinetics - ADP Release
+
+&lt;img src = "images/biorender-adp-release.png" style = "width: 80%; display: block; margin: auto;"&gt;
+
+---
+# Stopped flow transient kinetics - ADP Release
 - Rate of ADP-release is unchanged by thin-filament
 
 &lt;img src = "images/kinetic-data-adp.jpg" style = "display: block; margin: auto; width: 50%; padding-top: 40px;"&gt;
 
 ---
 
-# Stopped Flow Kinetics
-- Rate of ATP binding is slowed
-- ATP binding occurs in several steps:
+# Stopped flow transient kinetics - ATP Induced Dissociation
 
-&lt;img src = "images/kinetic-data-atp.jpg" style = "display: block; margin: auto; width: 90%; padding-top: 40px;"&gt;
+&lt;img src = "images/biorender-atp-induced-dissociation.png" style = "display: block; margin: auto; width: 80%;"&gt;
 
+---
+# Stopped flow transient kinetics - ATP Induced Dissociation
+- Second order rate of ATP induced dissociation is slowed by the regulatory proteins
+  - Unregulated =   `\(4~(\mu M^{-1} \cdot s^{-1})\)`
+  - Regulated = `\(2~(\mu M^{-1} \cdot s^{-1})\)`
+
+&lt;img src = "images/screenshot-atp-induced-dissociation.png" style = "display: block; margin: auto; width: 50%; margin-top: 1%;"&gt;
+
+
+---
+
+# Stopped flow transient kinetics - ATP Induced Dissociation
+- Second order rate of ATP induced dissociation is slowed by the regulatory proteins
+  - Unregulated =   `\(4~(\mu M^{-1} \cdot s^{-1})\)`
+  - Regulated = `\(2~(\mu M^{-1} \cdot s^{-1})\)`
+- However, this effect not relevant at physiological [ATP]
+
+.center[&lt;img src = "images/myosin-xb-cycle-high-res.jpg" style = "width: 45%;"&gt;]
+.footnote2[Image from Barrick &amp; Greenberg 2021]
 
 ---
 # Myosin's kinetics are load dependent
+- Implied by muscle's force/velocity relationship
 
 
-&lt;img src = "images/gg-feedback-trace.png" style = "display: block; margin: auto; width: 90%; padding-top: 30px;"&gt;
+&lt;img src = "images/hill-1938-fv.png" style = "display: block; margin: auto; width: 50%; margin-top: 1%;"&gt;
 
----
-# Myosin's kinetics are load dependent
 
-- Currently finishing collecting 
-- Preliminary data suggest similiar load dependences between unreg/reg
-
-&lt;img src = "images/trap-data-unreg-bell.jpg" style = "display: block; margin: auto; width: 45%; padding-top: 0px;"&gt;
+.footnote2[Image from AV Hill 1938]
 
 ---
+# Is myosin's load dependence altered by the thin-filament?
 
+.center[&lt;img src = "images/myosin-xb-cycle-high-res.jpg" style = "width: 60%;"&gt;]
+.footnote2[Image from Barrick &amp; Greenberg 2021]
+
+---
+# Isometric Force Clamp
+
+&lt;img src = "images/biorender-force-clamp.png" style = "display: block; margin: auto; width: 75%; padding-top: 0px;"&gt;
+
+---
+# Isometric Force Clamp
+- No change in load dependence with regulatory proteins
+&lt;img src = "images/figure-4_feedback.png" style = "display: block; margin: auto; width: 70%; padding-top: 10px;"&gt;
+
+---
+# Summary 
+
+&lt;img src = "images/myosin.gif" style = "width: 40%; position: fixed; left: 50%; top: 75%;  transform: translate(-50%, -50%);"&gt;
+
+- Thin-filament does not alter myosin's mechanics
+  - Total displacement or magnitude of substeps
+  - Load dependence unchanged
+--
+
+- Kinetics are slowed only at low [ATP]
+  - Biophysically interesting, implies more than a basic steric blocking by tropomyosin
+  - Not relevant at physiological [ATP]
+--
+
+- Important implications for modelling of muscle contraction and disease
+
+---
 
 
 
