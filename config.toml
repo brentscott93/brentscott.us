@@ -182,7 +182,33 @@ staticDir = "static"
         format = ["date", "authors", "title", "journal"]
         #If you don't want to group publications, comment the line below by adding # at the beginning
         types = ["Journal Articles", "Proceedings"]
+
+[[params.publication.list]]
+            title = "Multiscale biophysical models of cardiomyopathies reveal complexities challenging existing dogmas"
+            authors = "Scott B & Greenberg MJ"
+            date = "2023"
+            journal = "Biophysical Journal. https://doi.org/10.1016/j.bpj.2023.11.014"
+            link = "publications/scott-greenberg-2023.pdf"
+            type = "Journal Articles"
+
+
+[[params.publication.list]]
+            title = "A mutation in switch I alters the load-dependent kinetics of myosin Va"
+            authors = "Marang C, Scott B, Chambers J, Gunther L, Yengo C, & Debold EP"
+            date = "2023"
+            journal = "Nature Communications. https://doi.org/10.1038/s41467-023-38535-0"
+            link = "publications/marang-2023.pdf"
+            type = "Journal Articles"
+
  
+ [[params.publication.list]]
+            title = "Single-molecule mechanics and kinetics of cardiac myosin interacting with regulated thin filaments"
+            authors = "Clippinger-Schulte S, Scott B, Barrick S, Stump WT, Blackwell T, Greenberg MJ"
+            date = "2023"
+            journal = "Biophysical Journal. https://doi.org/10.1016/j.bpj.2023.05.008"
+            link = "publications/clippinger-scott-2023-biophysical-journal.pdf"
+            type = "Journal Articles"
+	    
    [[params.publication.list]]
             title = "Myosin's powerstroke occurs prior to the release of phosphate from the active site"
             authors = "Scott B, Marang C, Woodward M, & Debold EP"
