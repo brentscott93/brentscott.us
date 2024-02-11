@@ -184,6 +184,15 @@ staticDir = "static"
         types = ["Journal Articles", "Proceedings"]
 
 [[params.publication.list]]
+            title = "Modeling thick filament activation suggests a molecular basis for force depression"
+            authors = "Shuyue Liu, Chris Marang, Mike Woodward, Venus Joumaa, Tim Leonard, Brent Scott, Edward Debold, Walter Herzog, and Sam Walcott"
+            date = "2024"
+            journal = "Biophysical Journal. https://doi.org/10.1016/j.bpj.2024.01.024"
+            link = "publications/liu-marang-2024.pdf"
+            type = "Journal Articles"
+
+
+[[params.publication.list]]
             title = "Multiscale biophysical models of cardiomyopathies reveal complexities challenging existing dogmas"
             authors = "Scott B & Greenberg MJ"
             date = "2023"
