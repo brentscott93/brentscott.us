@@ -51,7 +51,7 @@ staticDir = "static"
         [[params.social.list]]
             class = "ai"
             icon = "ai-google-scholar" 
-            url = "https://scholar.google.com/citations?hl=en&user=v_4YkmYAAAAJ&view_op=list_works&gmla=AJsN-F588qLiiHEzJJZucY6rIHVxxSNzkWmGYy-IhAN5k2z3H5MibxUAkczE1LAULACKyXMX2sEK9pS3TqvBTrSEpHO9Pkjt4e7Y_-i_s10GHrA6z9NW0ic"
+            url = "https://scholar.google.com/citations?user=obdEKCsAAAAJ&hl=en"
             title = "Google Scholar"
         [[params.social.list]]
             class = "fab"
@@ -61,7 +61,7 @@ staticDir = "static"
         #[[params.social.list]]
          #   class = "fab"
           #  icon = "fa-twitter"
-           # url = "https://twitter.com/brentscott93"
+           # url = "https://twitter.com/brentscott_"
             #title = "Twitter"
 	[[params.social.list]]
             class = "fab"
