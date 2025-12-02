@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>I do everything with R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Scott" />
+    <meta name="date" content="2025-12-02" />
+    <script src="slides_files/header-attrs-2.29/header-attrs.js"></script>
+    <link href="slides_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="slides_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="slides_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="slides_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="slides_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="slides_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+    <script src="slides_files/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+    <script src="slides_files/jquery-1.11.1/jquery.min.js"></script>
+    <link href="slides_files/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+    <script src="slides_files/dygraphs-1.1.1/dygraph-combined.js"></script>
+    <script src="slides_files/dygraphs-1.1.1/shapes.js"></script>
+    <script src="slides_files/moment-2.8.4/moment.js"></script>
+    <script src="slides_files/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+    <script src="slides_files/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+    <script src="slides_files/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# I do everything with R
+]
+.author[
+### Prof. Scott
+]
+.institute[
+### William &amp; Mary
+]
+.date[
+### 2025-12-02
+]
+
+---
+
+
+
+
+# What are some things I use R for?
+
+### Statistics, of course
+
+--
+  
+### BUT - I probably spend *least* amount of time actually performing statistical tests in R...
+  
+--
+  
+### So, what am I spending all my time in R doing?
+  
+---
+
+### These slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+  - an RMarkdown document
+
+--
+
+### My dissertation
+- RMarkdown rendered to both PDF (LaTex) and HTML format
+- Uses conditional rendering!
+  
+--
+
+### Websites
+  - Both, personal (brentscott.us) and W&amp;M research lab (myolab.org)
+- {blogdown}
+
+---
+  # What are some things I use R for?
+  ### My CV
+  - Autoformatted RMarkdown {pagedown}
+- https://brentscott.us/cv.pdf
+
+--
+
+### Software GUIs
+- Graphical user interfaces to share analysis programs
+- Non-technical users can use scripts
+- {shiny}
+
+---
+  ### Interactive graphs {dygraphs}
+  
+
+``` r
+library(dygraphs)
+lungDeaths &lt;- cbind(mdeaths, fdeaths)
+dygraph(lungDeaths)%&gt;% dyRangeSelector()
+```
+
+<div class="dygraphs html-widget html-fill-item" id="htmlwidget-f3e2fa292f871945e03b" style="width:504px;height:200px;"></div>
+<script type="application/json" data-for="htmlwidget-f3e2fa292f871945e03b">{"x":{"attrs":{"labels":["month","mdeaths","fdeaths"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"monthly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["1974-01-01T00:00:00.000Z","1974-02-01T00:00:00.000Z","1974-03-01T00:00:00.000Z","1974-04-01T00:00:00.000Z","1974-05-01T00:00:00.000Z","1974-06-01T00:00:00.000Z","1974-07-01T00:00:00.000Z","1974-08-01T00:00:00.000Z","1974-09-01T00:00:00.000Z","1974-10-01T00:00:00.000Z","1974-11-01T00:00:00.000Z","1974-12-01T00:00:00.000Z","1975-01-01T00:00:00.000Z","1975-02-01T00:00:00.000Z","1975-03-01T00:00:00.000Z","1975-04-01T00:00:00.000Z","1975-05-01T00:00:00.000Z","1975-06-01T00:00:00.000Z","1975-07-01T00:00:00.000Z","1975-08-01T00:00:00.000Z","1975-09-01T00:00:00.000Z","1975-10-01T00:00:00.000Z","1975-11-01T00:00:00.000Z","1975-12-01T00:00:00.000Z","1976-01-01T00:00:00.000Z","1976-02-01T00:00:00.000Z","1976-03-01T00:00:00.000Z","1976-04-01T00:00:00.000Z","1976-05-01T00:00:00.000Z","1976-06-01T00:00:00.000Z","1976-07-01T00:00:00.000Z","1976-08-01T00:00:00.000Z","1976-09-01T00:00:00.000Z","1976-10-01T00:00:00.000Z","1976-11-01T00:00:00.000Z","1976-12-01T00:00:00.000Z","1977-01-01T00:00:00.000Z","1977-02-01T00:00:00.000Z","1977-03-01T00:00:00.000Z","1977-04-01T00:00:00.000Z","1977-05-01T00:00:00.000Z","1977-06-01T00:00:00.000Z","1977-07-01T00:00:00.000Z","1977-08-01T00:00:00.000Z","1977-09-01T00:00:00.000Z","1977-10-01T00:00:00.000Z","1977-11-01T00:00:00.000Z","1977-12-01T00:00:00.000Z","1978-01-01T00:00:00.000Z","1978-02-01T00:00:00.000Z","1978-03-01T00:00:00.000Z","1978-04-01T00:00:00.000Z","1978-05-01T00:00:00.000Z","1978-06-01T00:00:00.000Z","1978-07-01T00:00:00.000Z","1978-08-01T00:00:00.000Z","1978-09-01T00:00:00.000Z","1978-10-01T00:00:00.000Z","1978-11-01T00:00:00.000Z","1978-12-01T00:00:00.000Z","1979-01-01T00:00:00.000Z","1979-02-01T00:00:00.000Z","1979-03-01T00:00:00.000Z","1979-04-01T00:00:00.000Z","1979-05-01T00:00:00.000Z","1979-06-01T00:00:00.000Z","1979-07-01T00:00:00.000Z","1979-08-01T00:00:00.000Z","1979-09-01T00:00:00.000Z","1979-10-01T00:00:00.000Z","1979-11-01T00:00:00.000Z","1979-12-01T00:00:00.000Z"],[2134,1863,1877,1877,1492,1249,1280,1131,1209,1492,1621,1846,2103,2137,2153,1833,1403,1288,1186,1133,1053,1347,1545,2066,2020,2750,2283,1479,1189,1160,1113,970,999,1208,1467,2059,2240,1634,1722,1801,1246,1162,1087,1013,959,1179,1229,1655,2019,2284,1942,1423,1340,1187,1098,1004,970,1140,1110,1812,2263,1820,1846,1531,1215,1075,1056,975,940,1081,1294,1341],[901,689,827,677,522,406,441,393,387,582,578,666,830,752,785,664,467,438,421,412,343,440,531,771,767,1141,896,532,447,420,376,330,357,445,546,764,862,660,663,643,502,392,411,348,387,385,411,638,796,853,737,546,530,446,431,362,387,430,425,679,821,785,727,612,478,429,405,379,393,411,487,574]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+
+
+
+---
+# What are some things I use R for?
+### 3D ray tracing [{rayrender}](https://www.rayrender.net/)
+&lt;img src="rayrender-image.png" style = "width:50%" &gt;
+
+---
+# What are some things I use R for?
+  
+### Reproducible figures for journal publications
+- {ggplot2}, {cowplot}
+  
+--
+
+### Reproducible analyses
+- Data wrangling and manipulation
+- Calculations and model fitting
+
+--
+
+### Automate your life
+- *when applicable*
+  - Think through the relative time cost of writing automation versus manually performing the task!
+  
+---
+## Prof. Scott's Core Principles 
+  
+#### (in no particular order)
+
+--
+  
+### Computers are not smart. They are very good at following directions and doing math.
+
+--
+  
+### Everything that can be automated, should be automated.
+
+--
+  
+### NEVER use spaces in filenames!
+
+--
+  
+### Read the manual
+---
+## Prof. Scott's Core Principles 
+### In regards to data:
+
+- #### never alter raw data
+
+--
+
+- #### never save intermediate datasets
+
+--
+
+- #### only save input (raw data) and output (final summarized)
+
+--
+
+- #### all intermediate datasets/calculation should be documented in code to reproduce output verbatim (*yes, I do re-run the same calculations over and over*)
+
+--
+
+- #### You should be able to execute a script to re-generate all figures/calculations in a scientific paper (i.e. figure-1.R, etc)
+  
+---
+# R is not just for stats
+
+--
+
+- ### R is a *programming language* 
+
+--
+  
+- #### You can use it create files/folders on your computer, manipulate data, perform calculations, etc
+
+--
+  
+- #### R allows you to communicate with your computer!
+
+--
+  
+### You just have to learn how to tell it to do what you want...
+
+--
+
+- #### Remember, computers are not smart...they are just really good at following directions
+
+---
+## Favorite function - `list.files()`
+  
+#### This function returns a string vector of all files in a folder:
+
+--
+  
+
+``` r
+# First, see where you current working directory is...
+getwd()
+```
+
+```
+## [1] "/home/brent/Documents/2025-12-02-class"
+```
+
+``` r
+#Then, make a new folder on your computer
+dir.create("wm-r-class")
+
+# And, write a few dummy data files
+write.csv(x = mtcars, file = "wm-r-class/mtcars.csv")
+write.csv(x = iris, file = "wm-r-class/iris.csv")
+
+#see what files are in there
+list.files("wm-r-class", full.names = TRUE)
+```
+
+```
+## [1] "wm-r-class/iris.csv"   "wm-r-class/mtcars.csv"
+```
+
+---
+## *Really???*     
+
+--
+
+###That is one of your favorite functions???
+  
+--
+  
+## YES, `list.files()` is incredibly powerful and *super* helpful for automating your life
+  
+---
+
+## Example - be thoughtful of how you name your files and/or folders 
+
+--
+- ### Define a systematic way of filenaming
+- ### I never use spaces. But, instead use dash "-" as space within a variable and underscore "_" to separate condition/variables names
+
+--
+  
+  - example: "2025-12-02_WT_10-mM-ATP.csv", "2025-12_01_S217A_10-mM-ATP.csv"
+
+--
+
+- ### Use **LEXICOGRAPHICAL** date format (YYYY-MM-DD), it allows you to easily sort in chronological order
+
+---
+# Example
+
+
+``` r
+# Start by making some dummy data for a reproducible example (i.e. reprex)
+# First, make a vector filenames we will use to save data
+
+filenames &lt;- c("condition-1_variable-a.csv",
+               "condition-2_variable-b.csv",
+               "condition-3_variable-c.csv")
+
+#write 3 new files to our folder
+lapply(filenames, \(x) write.csv(iris, file.path("wm-r-class", x)))
+
+#remove old files
+file.remove("wm-r-class/iris.csv")
+file.remove("wm-r-class/mtcars.csv")
+```
+
+
+``` r
+# check that new files are there
+list.files("wm-r-class")
+```
+
+```
+## [1] "condition-1_variable-a.csv" "condition-2_variable-b.csv"
+## [3] "condition-3_variable-c.csv"
+```
+
+---
+### You can use `list.files()` to locate your files and then use the identying information in the filenames to then add new columns to the data as you read the data into R
+  
+
+``` r
+# load data.table library
+library(data.table)
+
+# find files, save vector to an R object "&lt;-"
+files_in_folder &lt;- list.files("wm-r-class", full.names = TRUE)
+
+# write a custom file reader function
+custom_file_read_function &lt;- function(file_location){
+  csv_file &lt;- data.table::fread(file_location)
+  csv_file$path &lt;- file_location
+  return(csv_file)
+}
+
+# read all files in at once - lapply returns a list of data frames
+our_data_list &lt;- lapply(files_in_folder, custom_file_read_function)
+
+# reduce the list of dataframes to one big dataframe
+our_data_df &lt;- data.table::rbindlist(our_data_list)
+```
+
+---
+### Now split the columns into new columns
+  
+
+``` r
+# our new data frame has a column called "path' with the file name/location
+# this can very beneficial to us!
+# take the path column and split it into 2 new columns
+our_data_df[, c("wm-r-class-folder", "information") := tstrsplit(path, split = "/")]
+
+# that created a useless column called "wm-r-class-folder"
+# but also a very useful column called "information"
+# now split column "information" into 2 new columns!
+our_data_df[, c("condition", "variable") := tstrsplit(information, split = "_")]
+
+dplyr::select(tibble::as_tibble(our_data_df), condition, variable)
+```
+
+```
+## # A tibble: 450 × 2
+##    condition   variable      
+##    &lt;chr&gt;       &lt;chr&gt;         
+##  1 condition-1 variable-a.csv
+##  2 condition-1 variable-a.csv
+##  3 condition-1 variable-a.csv
+##  4 condition-1 variable-a.csv
+##  5 condition-1 variable-a.csv
+##  6 condition-1 variable-a.csv
+##  7 condition-1 variable-a.csv
+##  8 condition-1 variable-a.csv
+##  9 condition-1 variable-a.csv
+## 10 condition-1 variable-a.csv
+## # ℹ 440 more rows
+```
+
+---
+
+### Pretty names up if you want
+  
+
+``` r
+# convert "condition-1" to just 1, etc
+our_data_df[, condition := as.numeric(sub(pattern = "condition-", replacement = "", x = condition))]
+
+#first remove the ".csv"
+our_data_df[, variable := sub(pattern = ".csv", replacement = "", x = variable)]
+
+#then convert "variable-a" to just "a", etc
+our_data_df[, variable := sub(pattern = "variable-", replacement = "", x = variable)]
+
+dplyr::select(tibble::as_tibble(our_data_df), condition, variable)
+```
+
+```
+## # A tibble: 450 × 2
+##    condition variable
+##        &lt;dbl&gt; &lt;chr&gt;   
+##  1         1 a       
+##  2         1 a       
+##  3         1 a       
+##  4         1 a       
+##  5         1 a       
+##  6         1 a       
+##  7         1 a       
+##  8         1 a       
+##  9         1 a       
+## 10         1 a       
+## # ℹ 440 more rows
+```
+
+---
+  
+### Use the new information to group by for calculation or to plot
+  
+#### Remember we have:
+- Conditions: 1, 2, 3
+- Variables: A, B, C
+
+--
+
+
+
+``` r
+library(ggplot2)
+
+ggplot(data = our_data_df)+
+  geom_histogram(aes(x = Sepal.Length, fill = variable))+
+  facet_wrap(~condition, nrow = 1)
+```
+
+```
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+![](slides_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+---
+
+### Favorite data structure - Nested dataframe
+
+&lt;img src="tidyr-nest.png" style="width:80%;"&gt;
+
+---
+
+# Let's nest the iris data set
+
+
+``` r
+library(dplyr)
+library(tidyr)
+
+iris_nest &lt;- iris %&gt;% nest(data = c(!Species))
+
+iris_nest
+```
+
+```
+## # A tibble: 3 × 2
+##   Species    data             
+##   &lt;fct&gt;      &lt;list&gt;           
+## 1 setosa     &lt;tibble [50 × 4]&gt;
+## 2 versicolor &lt;tibble [50 × 4]&gt;
+## 3 virginica  &lt;tibble [50 × 4]&gt;
+```
+
+---
+## Why would we want to do this?
+
+- ### Nested data frames are very helpful for fitting *many* models at a single time
+
+
+``` r
+# fit an arbitrary number of linear regression models
+# here it will fit 3, because we have 3 groups
+# but if you do more experiments and add more groups...
+# YOU DON'T HAVE TO UPDATE YOUR CODE
+iris_nest &lt;- 
+  iris_nest %&gt;%
+  dplyr::mutate(lm_mod = lapply(data, 
+                                \(x) lm(Sepal.Length ~ Petal.Length, data = x)),
+                plot_line = lapply(lm_mod,
+                                   \(x) data.frame(x = seq(0, 7, by = 0.1),
+                                                   y = predict(x, 
+                                                               newdata = data.frame(Petal.Length = seq(0, 7, by = 0.1))
+                                                                  
+                                                               )
+                                                   )
+                                   )
+  )
+```
+---
+
+``` r
+iris_nest
+```
+
+```
+## # A tibble: 3 × 4
+##   Species    data              lm_mod plot_line    
+##   &lt;fct&gt;      &lt;list&gt;            &lt;list&gt; &lt;list&gt;       
+## 1 setosa     &lt;tibble [50 × 4]&gt; &lt;lm&gt;   &lt;df [71 × 2]&gt;
+## 2 versicolor &lt;tibble [50 × 4]&gt; &lt;lm&gt;   &lt;df [71 × 2]&gt;
+## 3 virginica  &lt;tibble [50 × 4]&gt; &lt;lm&gt;   &lt;df [71 × 2]&gt;
+```
+
+
+``` r
+iris_nest$plot_line
+```
+
+```
+## [[1]]
+##      x        y
+## 1  0.0 4.213168
+## 2  0.1 4.267397
+## 3  0.2 4.321627
+## 4  0.3 4.375856
+## 5  0.4 4.430085
+## 6  0.5 4.484315
+## 7  0.6 4.538544
+## 8  0.7 4.592773
+## 9  0.8 4.647002
+## 10 0.9 4.701232
+## 11 1.0 4.755461
+## 12 1.1 4.809690
+## 13 1.2 4.863919
+## 14 1.3 4.918149
+## 15 1.4 4.972378
+## 16 1.5 5.026607
+## 17 1.6 5.080836
+## 18 1.7 5.135066
+## 19 1.8 5.189295
+## 20 1.9 5.243524
+## 21 2.0 5.297753
+## 22 2.1 5.351983
+## 23 2.2 5.406212
+## 24 2.3 5.460441
+## 25 2.4 5.514670
+## 26 2.5 5.568900
+## 27 2.6 5.623129
+## 28 2.7 5.677358
+## 29 2.8 5.731587
+## 30 2.9 5.785817
+## 31 3.0 5.840046
+## 32 3.1 5.894275
+## 33 3.2 5.948505
+## 34 3.3 6.002734
+## 35 3.4 6.056963
+## 36 3.5 6.111192
+## 37 3.6 6.165422
+## 38 3.7 6.219651
+## 39 3.8 6.273880
+## 40 3.9 6.328109
+## 41 4.0 6.382339
+## 42 4.1 6.436568
+## 43 4.2 6.490797
+## 44 4.3 6.545026
+## 45 4.4 6.599256
+## 46 4.5 6.653485
+## 47 4.6 6.707714
+## 48 4.7 6.761943
+## 49 4.8 6.816173
+## 50 4.9 6.870402
+## 51 5.0 6.924631
+## 52 5.1 6.978860
+## 53 5.2 7.033090
+## 54 5.3 7.087319
+## 55 5.4 7.141548
+## 56 5.5 7.195778
+## 57 5.6 7.250007
+## 58 5.7 7.304236
+## 59 5.8 7.358465
+## 60 5.9 7.412695
+## 61 6.0 7.466924
+## 62 6.1 7.521153
+## 63 6.2 7.575382
+## 64 6.3 7.629612
+## 65 6.4 7.683841
+## 66 6.5 7.738070
+## 67 6.6 7.792299
+## 68 6.7 7.846529
+## 69 6.8 7.900758
+## 70 6.9 7.954987
+## 71 7.0 8.009216
+## 
+## [[2]]
+##      x        y
+## 1  0.0 2.407523
+## 2  0.1 2.490351
+## 3  0.2 2.573179
+## 4  0.3 2.656007
+## 5  0.4 2.738835
+## 6  0.5 2.821664
+## 7  0.6 2.904492
+## 8  0.7 2.987320
+## 9  0.8 3.070148
+## 10 0.9 3.152976
+## 11 1.0 3.235804
+## 12 1.1 3.318632
+## 13 1.2 3.401460
+## 14 1.3 3.484288
+## 15 1.4 3.567116
+## 16 1.5 3.649945
+## 17 1.6 3.732773
+## 18 1.7 3.815601
+## 19 1.8 3.898429
+## 20 1.9 3.981257
+## 21 2.0 4.064085
+## 22 2.1 4.146913
+## 23 2.2 4.229741
+## 24 2.3 4.312569
+## 25 2.4 4.395397
+## 26 2.5 4.478226
+## 27 2.6 4.561054
+## 28 2.7 4.643882
+## 29 2.8 4.726710
+## 30 2.9 4.809538
+## 31 3.0 4.892366
+## 32 3.1 4.975194
+## 33 3.2 5.058022
+## 34 3.3 5.140850
+## 35 3.4 5.223678
+## 36 3.5 5.306506
+## 37 3.6 5.389335
+## 38 3.7 5.472163
+## 39 3.8 5.554991
+## 40 3.9 5.637819
+## 41 4.0 5.720647
+## 42 4.1 5.803475
+## 43 4.2 5.886303
+## 44 4.3 5.969131
+## 45 4.4 6.051959
+## 46 4.5 6.134787
+## 47 4.6 6.217616
+## 48 4.7 6.300444
+## 49 4.8 6.383272
+## 50 4.9 6.466100
+## 51 5.0 6.548928
+## 52 5.1 6.631756
+## 53 5.2 6.714584
+## 54 5.3 6.797412
+## 55 5.4 6.880240
+## 56 5.5 6.963068
+## 57 5.6 7.045896
+## 58 5.7 7.128725
+## 59 5.8 7.211553
+## 60 5.9 7.294381
+## 61 6.0 7.377209
+## 62 6.1 7.460037
+## 63 6.2 7.542865
+## 64 6.3 7.625693
+## 65 6.4 7.708521
+## 66 6.5 7.791349
+## 67 6.6 7.874177
+## 68 6.7 7.957006
+## 69 6.8 8.039834
+## 70 6.9 8.122662
+## 71 7.0 8.205490
+## 
+## [[3]]
+##      x        y
+## 1  0.0 1.059659
+## 2  0.1 1.159233
+## 3  0.2 1.258807
+## 4  0.3 1.358381
+## 5  0.4 1.457955
+## 6  0.5 1.557528
+## 7  0.6 1.657102
+## 8  0.7 1.756676
+## 9  0.8 1.856250
+## 10 0.9 1.955824
+## 11 1.0 2.055398
+## 12 1.1 2.154972
+## 13 1.2 2.254545
+## 14 1.3 2.354119
+## 15 1.4 2.453693
+## 16 1.5 2.553267
+## 17 1.6 2.652841
+## 18 1.7 2.752415
+## 19 1.8 2.851989
+## 20 1.9 2.951562
+## 21 2.0 3.051136
+## 22 2.1 3.150710
+## 23 2.2 3.250284
+## 24 2.3 3.349858
+## 25 2.4 3.449432
+## 26 2.5 3.549006
+## 27 2.6 3.648580
+## 28 2.7 3.748153
+## 29 2.8 3.847727
+## 30 2.9 3.947301
+## 31 3.0 4.046875
+## 32 3.1 4.146449
+## 33 3.2 4.246023
+## 34 3.3 4.345597
+## 35 3.4 4.445170
+## 36 3.5 4.544744
+## 37 3.6 4.644318
+## 38 3.7 4.743892
+## 39 3.8 4.843466
+## 40 3.9 4.943040
+## 41 4.0 5.042614
+## 42 4.1 5.142188
+## 43 4.2 5.241761
+## 44 4.3 5.341335
+## 45 4.4 5.440909
+## 46 4.5 5.540483
+## 47 4.6 5.640057
+## 48 4.7 5.739631
+## 49 4.8 5.839205
+## 50 4.9 5.938778
+## 51 5.0 6.038352
+## 52 5.1 6.137926
+## 53 5.2 6.237500
+## 54 5.3 6.337074
+## 55 5.4 6.436648
+## 56 5.5 6.536222
+## 57 5.6 6.635795
+## 58 5.7 6.735369
+## 59 5.8 6.834943
+## 60 5.9 6.934517
+## 61 6.0 7.034091
+## 62 6.1 7.133665
+## 63 6.2 7.233239
+## 64 6.3 7.332813
+## 65 6.4 7.432386
+## 66 6.5 7.531960
+## 67 6.6 7.631534
+## 68 6.7 7.731108
+## 69 6.8 7.830682
+## 70 6.9 7.930256
+## 71 7.0 8.029830
+```
+
+---
+
+## Unnest your data to plot the results
+
+- ### Unnest is the inverse, or opposite, action of nesting
+
+--
+
+- ### ggplot2 based plotting in R likes "long" data
+
+--
+
+- ### So, we need to unravel the nest back to a long format data frame
+
+--
+
+
+``` r
+iris_fit_lines &lt;- unnest(iris_nest, 
+                         cols = c(Species, plot_line)) %&gt;% 
+  dplyr::select(Species, x, y)
+
+iris_fit_lines
+```
+
+```
+## # A tibble: 213 × 3
+##    Species     x     y
+##    &lt;fct&gt;   &lt;dbl&gt; &lt;dbl&gt;
+##  1 setosa    0    4.21
+##  2 setosa    0.1  4.27
+##  3 setosa    0.2  4.32
+##  4 setosa    0.3  4.38
+##  5 setosa    0.4  4.43
+##  6 setosa    0.5  4.48
+##  7 setosa    0.6  4.54
+##  8 setosa    0.7  4.59
+##  9 setosa    0.8  4.65
+## 10 setosa    0.9  4.70
+## # ℹ 203 more rows
+```
+
+---
+
+## Plot the raw data
+
+``` r
+gg &lt;- 
+  ggplot()+
+  geom_point(data = iris, 
+             aes(x = Petal.Length,
+                 y = Sepal.Length, 
+                 color = Species))+
+  facet_wrap(~Species, nrow = 1)
+
+gg
+```
+
+![](slides_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+
+---
+
+## Draw the fit lines over
+
+
+``` r
+gg+geom_line(data = iris_fit_lines,
+             aes(x = x, 
+                 y = y, 
+                 color= Species))
+```
+
+![](slides_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
+
+---
+
+### Or extract coefficients and unnest
+
+
+``` r
+library(broom)
+
+iris_nest %&gt;%
+  mutate(coefs = lapply(lm_mod, broom::tidy))%&gt;%
+  dplyr::select(Species, coefs)%&gt;%
+  tidyr::unnest(cols = c(coefs))
+```
+
+```
+## # A tibble: 6 × 6
+##   Species    term         estimate std.error statistic  p.value
+##   &lt;fct&gt;      &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+## 1 setosa     (Intercept)     4.21     0.416      10.1  1.61e-13
+## 2 setosa     Petal.Length    0.542    0.282       1.92 6.07e- 2
+## 3 versicolor (Intercept)     2.41     0.446       5.39 2.08e- 6
+## 4 versicolor Petal.Length    0.828    0.104       7.95 2.59e-10
+## 5 virginica  (Intercept)     1.06     0.467       2.27 2.77e- 2
+## 6 virginica  Petal.Length    0.996    0.0837     11.9  6.30e-16
+```
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+  "ratio": "16:9",
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "countIncrementalSlides": false,
+  "self_contained": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
